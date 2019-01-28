@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="xreycApp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="images/sets/favicon.jpg">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <title>Reyco Seguma</title>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.js"></script>
+  <style>
+    #sideNav.affix {
+      position: fixed;
+      top: 85px;
+      z-index: 1;
+      width: 100%;
+    }
+
+    #sideNav.affix-bottom {
+      position: absolute;
+      width: 100%;
+    }
+
+    /*SCROLL DESIGN*/
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+      margin-left: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #248ec1ff; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+  </style>
+</head>
+
+<body ng-controller="MainCtrl">
+  <!-------------------------------------------------------------------------------------->
+
+  <!---NAVIGATION-->
+  <div class="top-nav-bg">
+    <div class="color-animate">
+
+
+      <!---BEFORE HEAD NAV SECTION-->
+      <div class="container">
+        <nav class="navbar navbar-inverse top-nav-brand">
+          <div class="navbar-header ">
+            <a class="navbar-brand" href="#/">xreyc<span class="glyphicon glyphicon-erase"></span>developer</a>
+          </div>
+        </nav>
+      </div>
+      <!---END BEFORE HEAD NAV SECTION-->
+
+      <!--DESKTOP-->
+      <!---AFTER HEAD NAV SECTION-->
+      <div id="scroll_menu">
+        <div class="container">
+          <!---CUSTOM HEAD NAV SECTION-->
+          <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+              <a class="navbar-brand" style="color:#248ec1ff;" href="#/">xreyc<span class="glyphicon glyphicon-erase"></span>developer</a>
+            </div>
+            
+            <div style="background: #fff;padding-top: 5px;">
+
+              <!--DESKTOP-->
+              <ul class="nav navbar-nav navbar-right hide-desktop-menu">
+                <li>
+                  <a href="#/" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('home')">
+                    <span class="glyphicon glyphicon-home"></span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#/profile" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('profile')">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#/education" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('education')">
+                    <span class="glyphicon glyphicon-education"></span>
+                    Education
+                  </a>
+                </li>
+                <li>
+                  <a href="#/skills" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('skills')">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    Skills
+                  </a>
+                </li>
+                <!--<li><a href="#/code_sheets" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('code_sheets')">Code Sheets</a></li>-->
+                <li>
+                  <a href="#/about" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('about')">
+                    <span class="glyphicon glyphicon-paperclip"></span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#/contact" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('contact')">
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!---END AFTER HEAD NAV SECTION-->
+      <!--END DESKTOP-->
+
+      <!--MOBILE-->
+      <!---AFTER HEAD NAV DESKTOP SECTION-->
+      <div id="scroll_menu">
+        <div class="container">
+          <!---CUSTOM HEAD NAV SECTION-->
+          <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+              <button type="button" class="togglebutton navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" style="color:#248ec1ff;" href="#/">xreyc<span class="glyphicon glyphicon-erase"></span>developer</a>
+            </div>
+            
+            <div style="background: #fff; ">
+
+              <ul class="nav navbar-nav navbar-right toggle-menu sm-hide">
+                <li class="togglebutton">
+                  <a href="#/" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('home')">
+                    <span class="glyphicon glyphicon-home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="togglebutton">
+                  <a href="#/profile" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('profile')">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Profile
+                  </a>
+                </li>
+                <li class="togglebutton">
+                  <a href="#/education" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('education')">
+                    <span class="glyphicon glyphicon-education"></span>
+                    Education
+                  </a>
+                </li>
+                <li class="togglebutton">
+                  <a href="#/skills" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('skills')">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    Skills
+                  </a>
+                </li>
+                <!--<li><a href="#/code_sheets" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('code_sheets')">Code Sheets</a></li>-->
+                <li class="togglebutton">
+                  <a href="#/about" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('about')">
+                    <span class="glyphicon glyphicon-paperclip"></span>
+                    About
+                  </a>
+                </li>
+                <li class="togglebutton">
+                  <a href="#/contact" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="changeView('contact')">
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!---END AFTER HEAD NAV SECTION-->
+      <!--END MOBILE-->
+
+      <!---CUSTOM HEAD SECTION-->
+      <div class="container top-h" id="head-container">
+
+        <!---CUSTOM HEAD CONTENT SECTION-->
+        <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12"></div>
+          <div class="col-md-2 col-sm-12 col-xs-12 sm-top-center">
+            <img class="top-nav-img" src="images/profile/profile-1.png"/>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="top-nav-name">@REYCO_SEGUMA</div>
+
+            <div class="sm-top-course-mg">
+              <div class="top-nav-course">Electronics Engineer / Web Developer</div>
+            </div>
+
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12"></div>
+        </div>
+        <!---END CUSTOM HEAD CONTENT SECTION-->
+      </div>
+      <!---END CUSTOM HEAD SECTION-->
+
+
+
+      <!---MAIN NAV SECTION-->
+      <div class="container sm-hide">
+        <nav class="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active" ng-click="changeView('home')">
+              <a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li ng-click="changeView('profile')">
+              <a href="#/profile"><span class="	glyphicon glyphicon-user"></span> Profile</a>
+            </li>
+            <li ng-click="changeView('education')">
+              <a href="#/education"><span class="	glyphicon glyphicon-education"></span>
+                Education</a>
+            </li>
+            <li ng-click="changeView('skills')">
+              <a href="#/skills"><span class="	glyphicon glyphicon-pencil"></span> Skills</a>
+            </li>
+            <!--
+            <li ng-click="changeView('code_sheets')">
+              <a href="#/code_sheets"><span class="	glyphicon glyphicon-book"></span> Code Sheets</a>
+            </li>
+            -->
+            <li ng-click="changeView('about')">
+              <a href="#/about"><span class="	glyphicon glyphicon-paperclip"></span> About</a>
+            </li>
+            <li ng-click="changeView('contact')">
+              <a href="#/contact"><span class="	glyphicon glyphicon-phone-alt"></span>
+                Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!---END MAIN NAV SECTION-->
+    </div>
+  </div>
+  <!--END NAVIGATION-->
+
+  <!-------------------------------------------------------------------------------------->
+
+  <!---CONTENT SECTION-->
+  <div class="container">
+    <!---MAIN TOPIC SECTION-->
+    <div class="content-route" >
+      <!----HOME---->
+      <div class="row route-item-container" ng-show="home">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="##home_vuejs"><span class="route-item">VueJS</span></a>
+        <a href="##home_vuex"><span class="route-item">Vuex</span></a>
+        <a href="##home_reactjs" ><span class="route-item">ReactJS</span></a>
+        <a href="##home_redux"><span class="route-item">Redux</span></a>
+        <a href="##home_angular"><span class="route-item">Angular</span></a>
+        <a href="##home_rxjs"><span class="route-item">RxJS</span></a>
+        <a href="##home_nodejs"><span class="route-item">NodeJS</span></a>
+        <a href="##home_laravel"><span class="route-item">Laravel</span></a>
+        <a href="##home_django"><span class="route-item">Django</span></a>
+      </div>
+      <!----PROFILE---->
+      <div class="row route-item-container" ng-show="profile">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="#profile#profile_profile"><span class="route-item">Profile</span></a>
+        <a href="#profile#profile_projects"><span class="route-item">Projects</span></a>
+      </div>
+      <!----EDUCATION---->
+      <div class="row route-item-container" ng-show="education">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="#education#education_ndmu"><span class="route-item">NDMU</span></a>
+        <a href="#education#education_lnhs"><span class="route-item">LNHS</span></a>
+        <a href="#education#education_kles"><span class="route-item">KLES</span></a>
+        <a href="#education#education_lcem"><span class="route-item">LCEM</span></a>
+      </div>
+      <!----SKILLS---->
+      <div class="row route-item-container" ng-show="skills">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="#skills#skills_frontend"><span class="route-item">Frontend</span></a>
+        <a href="#skills#skills_backend"><span class="route-item">Backend</span></a>
+        <a href="#skills#skills_databases"><span class="route-item">Databases</span></a>
+        <a href="#skills#skills_graphics"><span class="route-item">Graphics</span></a>
+        <a href="#skills#skills_others"><span class="route-item">Others</span></a>
+      </div>
+      <!----CODE_SHEETS---->
+      <div class="row route-item-container" ng-show="code_sheets">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="#code_sheets#cs_bootstrap"><span class="route-item">Bootstrap</span></a>
+        <a href="#code_sheets#cs_sass"><span class="route-item">SASS</span></a>
+        <a href="#code_sheets#cs_jquery"><span class="route-item">JQuery</span></a>
+        <a href="#code_sheets#cs_vuejsvuex"><span class="route-item">VueJS+Vuex</span></a>
+        <a href="#code_sheets#cs_reactjsredux"><span class="route-item">ReactJS+Redux</span></a>
+        <a href="#code_sheets#cs_angularrxjs"><span class="route-item">Angular+RxJS</span></a>
+        <a href="#code_sheets#cs_nodejs"><span class="route-item">NodeJS</span></a>
+      </div>
+      <!----ABOUT---->
+      <div class="row route-item-container" ng-show="about">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <a href="#about#about_me"><span class="route-item">Me</span></a>
+        <a href="#about#about_experience"><span class="route-item">Experience</span></a>
+        <a href="#about#website"><span class="route-item">Website</span></a>
+      </div>
+      <!----CONTACT---->
+      <div class="row route-item-container" ng-show="contact">
+        <b>Main Content:</b>&nbsp;&nbsp;&nbsp;
+        <!--<a href="#contact#contact_me"><span class="route-item">Contact Me</span></a>-->
+        <a href="#contact#contact_information"><span class="route-item">Contact Information</span></a>
+      </div>
+    </div>
+    <!---END MAIN TOPIC SECTION-->
+  </div>
+
+  <div class="spacer"></div>
+
+  <!---MAIN CONTENT SECTION-->
+  <div class="container">
+    <div class="row">
+      <!---SIDE NAVIGATION-->
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="content content-side-container" id="sideNav" data-spy="affix">
+          <!----HOME---->
+          <div ng-show="home">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item">Frontend</li>
+            <ul>
+              <li><a href="##home_vuejs">VueJS</a></li>
+              <li><a href="##home_reactjs">ReactJS</a></li>
+              <li><a href="##home_angular">Angular</a></li>
+            </ul>
+
+            <li class="content-side-item">Backend</li>
+            <ul>
+              <li><a href="##home_nodejs">NodeJS</a></li>
+              <li><a href="##home_laravel">Laravel</a></li>
+              <li><a href="##home_django">Django</a></li>
+            </ul>
+          </div>
+          <!----PROFILE---->
+          <div ng-show="profile">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item"><a href="#profile#profile_profile">Profile</a></li>
+            <li class="content-side-item"><a href="#profile#profile_projects">Projects</a></li>
+          </div>
+          <!----EDUCATION---->
+          <div ng-show="education">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item"><a href="#education#education_ndmu">Notre Dame of Marbel University</a></li>
+            <li class="content-side-item"><a href="#education#education_lnhs">Laguilayan National High School</a></li>
+            <li class="content-side-item"><a href="#education#education_kles">Keytodak Lebak Elementary School</a></li>
+            <li class="content-side-item"><a href="#education#education_lces">Laguilayan Central Elementary School</a></li>
+          </div>
+          <!----SKILLS---->
+          <div ng-show="skills">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item"><a href="#skills#skills_frontend">Frontend</a></li>
+            <li class="content-side-item"><a href="#skills#skills_backend">Backend</a></li>
+            <li class="content-side-item"><a href="#skills#skills_databases">Databases</a></li>
+            <li class="content-side-item"><a href="#skills#skills_graphics">Graphic Design</a></li>
+            <li class="content-side-item"><a href="#skills#skills_others">Others</a></li>
+          </div>
+          <!----CODE SHEETS---->
+          <div ng-show="code_sheets">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item">Frontend</li>
+            <ul>
+              <li><a href="#code_sheets#cs_bootstrap">Bootstrap</a></li>
+              <li><a href="#code_sheets#cs_sass">Sass</a></li>
+              <li><a href="#code_sheets#cs_jquery">JQuery</a></li>
+              <li><a href="#code_sheets#cs_vuejsvuex">VueJS+Vuex</a></li>
+              <li><a href="#code_sheets#cs_reactjsredux">ReactJS+Redux</a></li>
+              <li><a href="#code_sheets#cs_angularrxjs">Angular+RxJS</a></li>
+            </ul>
+
+            <li class="content-side-item">Backend</li>
+            <ul>
+              <li><a href="#code_sheets#cs_nodejs">NodeJS</a></li>
+            </ul>
+          </div>
+          <!----ABOUT---->
+          <div ng-show="about">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <li class="content-side-item">About</li>
+            <ul>
+              <li><a href="#about#about_me">Me</a></li>
+              <li><a href="#about#about_experience">Experience</a></li>
+              <li><a href="#about#about_website">Website</a></li>
+            </ul>
+          </div>
+          <!----CONTACT---->
+          <div ng-show="contact">
+            <span class="content-side-head">CONTENTS</span>
+            <div class="item-spacer"></div>
+            <!--<li class="content-side-item"><a href="#contact#contact_me">Contact Form</a></li>-->
+            <li class="content-side-item"><a href="#contact#contact_information">Contact Information</a></li>
+          </div>
+
+        </div>
+      </div>
+      <!---END SIDE NAVIGATION-->
+
+
+      <!--CONTENT-->
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <!--ROUTE-->
+        <div id="main">
+          <div ng-view></div>
+        </div>
+        <!--END ROUTE-->
+      </div>
+      <!--END CONTENT-->
+    </div>
+  </div>
+  <!---MAIN CONTENT SECTION-->
+
+
+  <div style="height: 70px;"></div>
+
+  <!---FOOTER-->
+  <footer  class="bottom-nav-bg">
+    <div  class="color-animate inset" style="height: 30px;"></div>
+
+    <div class="bottom-nav-bg-grey">
+      <div class="container">
+        <!---CUSTOM HEAD CONTENT SECTION-->
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12 footer-container">
+            <a class="footer-brand" href="#/">xreyc<span class="glyphicon glyphicon-erase"></span>developer</a><br>
+            <div class="footer-name">Reyco Seguma</div>
+            <div class="footer-email">segumareyco@gmail.com</div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 footer-container-b">
+            <div class="footer-menu-head">MENU</div>
+            <div class="footer-menu-item"><a href="#/" ng-click="changeView('home')">Home</a></div>
+            <div class="footer-menu-item"><a href="#/profile" ng-click="changeView('profile')">Profile</a></div>
+            <div class="footer-menu-item"><a href="#/education" ng-click="changeView('education')">Education</a></div>
+            <div class="footer-menu-item"><a href="#/skills" ng-click="changeView('skills')">Skills</a></div>
+            <!--<div class="footer-menu-item"><a href="#/code_sheets" ng-click="changeView('code_sheets')">Code Sheets</a></div>-->
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 footer-container-b">
+            <div class="footer-menu-head">CONTACT</div>
+            <div class="footer-menu-item">Phone: (+63) 9296933990</div>
+            <div class="footer-spacer"></div>
+            <div class="footer-menu-head">SOCIAL</div>
+            <div class="footer-menu-item"><a href="https://web.facebook.com/reyco.seguma" target="_blank">Facebook</a></div>
+            <div class="footer-menu-item"><a href="https://www.linkedin.com/in/reyco-seguma" target="_blank">LinkedIn</a></div>
+          </div>
+        </div>
+        <!---END CUSTOM HEAD CONTENT SECTION-->
+      </div>
+    </div>
+  </footer>
+  <!--END NAVIGATION-->
+
+  <script src="scripts.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="controllers/CodesheetsController/BootstrapController.js"></script>
+  <script src="controllers/CodesheetsController/SassController.js"></script>
+  <script src="controllers/CodesheetsController/JqueryController.js"></script>
+  <script src="controllers/CodesheetsController/VuejsController.js"></script>
+  <script src="controllers/CodesheetsController/ReactjsController.js"></script>
+  <script src="controllers/CodesheetsController/AngularController.js"></script>
+  <script src="controllers/CodesheetsController/NodejsController.js"></script>
+  <script type="text/javascript">
+    //Affix Limits
+    $("#sideNav").affix({ offset: { top: 350, bottom: 575 } });
+
+    //Navbar Collapse
+    $(document).ready(function(){
+      $(".togglebutton").click(function(){
+      $(".toggle-menu").toggle("fast");
+      });
+    });
+
+    //Head Scroll
+    (function($) {          
+        $(document).ready(function(){                    
+            $(window).scroll(function(){     
+              if($(window).width() > 1000){                     
+                if ($(this).scrollTop() > 200) {
+                    $('#scroll_menu').fadeIn(300);
+                } else {
+                    $('#scroll_menu').fadeOut(300);
+                }
+              }
+            });
+        });
+    })(jQuery);
+  </script>
+</body>
+<style>
+
+</style>
+</html>

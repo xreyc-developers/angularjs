@@ -1,0 +1,4040 @@
+<!--CONTENT START-->
+<div class="content">
+  <blockquote class="blockquote">
+    <p>
+      <div id="cs_bootstrap"></div>
+        In long-term project developments, most of the codes are repeated many times over different queries 
+        and operations based on the system requirements. When you are learning different programming languages, 
+        sometimes the syntax of code hard to recall since language has their own implementations and syntax.
+    </p>
+  </blockquote>
+</div>
+
+<div class="spacer"></div>
+<div class="content-sec-title">FRONTEND</div>
+<div class="spacer"></div>
+
+<!-------------------------------------BOOTSTRAP------------------------------------->
+<!-------------------------------------BOOTSTRAP------------------------------------->
+<!-------------------------------------BOOTSTRAP------------------------------------->
+<div class="content" ng-controller="BootstrapCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="BootstrapTab('contentA')">Navbar</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentB')">Sidebar</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentC')">Rows and Columns</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentD')">Containers</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentE')">Jumbotron</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentF')">Typography</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentG')">Alignments</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentH')">Quick Floats</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentI')">Blockquote</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentJ')">Code</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentK')">Contextual Color</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentL')">Buttons</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentM')">Forms</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentN')">Tables</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentO')">List</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentP')">Panels</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentQ')">Well</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentR')">Alerts</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentS')">Progressbar</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentT')">Label</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentU')">Badges</li>
+        <li class="list-group-item" ng-click="BootstrapTab('contentV')">Images</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">Bootstrap</div><br>
+<!--NAVBAR-->
+<textarea readonly="true" ng-show="bootstrapContentA"><!--
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li> 
+        <li><a href="#">Page 3</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+  </nav>
+  -->
+</textarea>
+
+<!--SIDEBAR-->
+<textarea readonly="true" ng-show="bootstrapContentB"><!--
+<style>
+  #headNav.affix {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+  #sideNav.affix {
+    position: fixed;
+    top: 70px;
+    z-index: 1;
+    width: 100%;
+  }
+  #sideNav.affix-bottom {
+    position: absolute;
+    width: 100%;
+  }
+</style>
+
+<div class="content content-side-container" id="sideNav" data-spy="affix">
+  <ul>
+    <li>VueJS</li>
+    <li>ReactJS</li>
+    <li>Angular</li>
+  </ul>
+</div>
+
+<script>
+  $("#sideNav").affix({ offset: { top: 350, bottom: 390 } });
+</script>
+-->
+</textarea>
+
+<!--ROWS AND COLUMN-->
+<textarea readonly="true" ng-show="bootstrapContentC"><!--
+<div class="row">
+  <div class="col-md-6"></div>
+  <div class="col-md-6"></div>
+</div>
+-->
+</textarea>
+
+<!--CONTAINERS-->
+<textarea readonly="true" ng-show="bootstrapContentD"><!--
+<div class="container"></div>
+<div class="container-fluid"></div>
+-->
+</textarea>
+
+<!--JUMBOTRON-->
+<textarea readonly="true" ng-show="bootstrapContentE"><!--
+<div class="jumbotron">
+    <h1>Bootstrap</h1> 
+    <p>Bootstrap is the most popular</p> 
+</div>
+-->
+</textarea>
+
+<!--TYPOGRAPHY-->
+<textarea readonly="true" ng-show="bootstrapContentF"><!--
+<h1 class="page-header">
+  Hello World 
+  <small>Secondary Text</small>
+</h1>
+
+<p class="lead">
+    <mark>new solution</mark>
+    <del>centuries, Euler’s method</del>
+    <u>Euclidian Algorithm</u> 
+</p>
+-->
+</textarea>
+
+<!--ALIGNMENTS-->
+<textarea readonly="true" ng-show="bootstrapContentG"><!--
+<p class="text-left text-lowercase">Aligned text to left</p>
+<p class="text-center text-uppercase">Aligned text to Center</p>
+<p class="text-right text-capitalized">Aligned text to Right</p>
+<p class="text-justify">Aligned text to Justify</p>
+<p class="text-nowrap">Aligned text to NoWrap</p>
+-->
+</textarea>
+
+<!--QUICK FLOATS-->
+<textarea readonly="true" ng-show="bootstrapContentH"><!--
+<div class="pull-right">Div Floated to right</div>
+<div class="pull-left">Div floated to left</div>
+<div class="clearfix"></div>
+-->
+</textarea>
+
+<!--BLOCKQUOTE-->
+<textarea readonly="true" ng-show="bootstrapContentI"><!--
+<blockquote class="blockquote">
+    <p>
+        The Euclidean algorithm is arguably one of the
+    </p>
+    <footer>Quote by: <cite title="John Doe">John Doe</cite></footer>
+</blockquote>
+
+<blockquote class="blockquote-reverse">
+    <p>
+        The Euclidean algorithm is arguably one of the 
+    </p>
+    <footer>Quote by: <cite title="John Doe">John Doe</cite></footer>
+</blockquote>
+-->
+</textarea>
+
+<!--CODE-->
+<textarea readonly="true" ng-show="bootstrapContentJ"><!--
+<code>
+  &lt;h1&gt;Heading Text&lt;/h1&gt;
+</code>
+
+Change Directory with <kbd>cd</kbd><br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>\
+-->
+</textarea>
+
+<!--CONTEXTUAL COLOR-->
+<textarea readonly="true" ng-show="bootstrapContentK"><!--
+<p class="text-primary">Hellow World</p>
+<p class="text-success">Hellow World</p>
+<p class="text-info">Hellow World</p>
+<p class="text-warning">Hellow World</p>
+<p class="text-danger">Hellow World</p>
+<p class="text-muted">Hellow World</p>
+-->
+</textarea>
+
+<!--BUTTONS-->
+<textarea readonly="true" ng-show="bootstrapContentL"><!--
+<button class="btn btn-default">Button</button>
+<a href="#" class="btn btn-default">Button</a>
+<input type="submit" class="btn btn-default" value="Button">
+
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-info">Info</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Delete</button>
+<button class="btn btn-link">Link</button>
+-->
+</textarea>
+
+<textarea readonly="true" ng-show="bootstrapContentK"><!--
+<p class="text-primary">Hellow World</p>
+<p class="text-success">Hellow World</p>
+<p class="text-info">Hellow World</p>
+<p class="text-warning">Hellow World</p>
+<p class="text-danger">Hellow World</p>
+<p class="text-muted">Hellow World</p>
+
+<button class="btn btn-default btn-lg">Default</button>
+<button class="btn btn-default">Default</button>
+<button class="btn btn-default btn-sm">Default</button>
+<button class="btn btn-default btn-xs">Default</button>
+-->
+</textarea>
+
+
+<!--FORM-->
+<textarea readonly="true" ng-show="bootstrapContentM"><!--
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+        <label>email</label>
+        <input type="email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+        <label>Gender</label>
+        <select class="form-control">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Upload File</label>
+        <input type="file">
+        <p class="help-block">Only png and jpg are allowed.</p>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out.
+        </label>
+    </div>
+</form>
+-->
+</textarea>
+
+<!--TABLES-->
+<textarea readonly="true" ng-show="bootstrapContentN"><!--
+<table class="table table-striped table-bordered table-hover table-condensed">  
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr class="danger">
+        <td>Reyco</td>
+        <td>Seguma</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Christian</td>
+        <td>Bulosan</td>
+        <td>22</td>
+    </tr>
+    <tr class="success">
+        <td>Jaspher John</td>
+        <td>Gatpolintan</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Renalyn</td>
+        <td>Bronula</td>
+        <td>22</td>
+    </tr>
+</table>
+-->
+</textarea>
+
+<!--CONTEXTUAL COLOR-->
+<textarea readonly="true" ng-show="bootstrapContentO"><!--
+<ul class="list-unstyled">
+    <li>List One</li>
+    <li>List Two</li>
+    <li>List Three</li>
+    <li>List Four</li>
+    <li>List Five</li>
+</ul>
+<ul class="list-inline">
+    <li>List One</li>
+    <li>List Two</li>
+    <li>List Three</li>
+    <li>List Four</li>
+    <li>List Five</li>
+</ul>
+
+<ul class="list-group">
+    <li class="list-group-item">Item One</li>
+    <li class="list-group-item">Item Two</li>
+    <li class="list-group-item">Item Three</li>
+    <li class="list-group-item">Item Four</li>
+    <li class="list-group-item">Item Five</li>
+</ul>
+
+<div class="list-group">
+    <a href="#" class="list-group-item">Item One</a>
+    <a href="#" class="list-group-item active">Item Two</a>
+    <a href="#" class="list-group-item list-group-item-success">Item Three</a>
+    <a href="#" class="list-group-item">Item Four</a>
+    <a href="#" class="list-group-item">Item Five</a>
+</div>
+-->
+</textarea>
+
+
+<!--PANELS-->
+<textarea readonly="true" ng-show="bootstrapContentP"><!--
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel Title</h3>
+    </div>
+    <div class="panel-body">
+        The Euclidean algorithm is arguably one of the oldest and most widely known algorithm. It is a method of computing the greates common divisor, g(GCD)of two integers and b. It is basically a continual repetition of the division algorithm for integers. 
+    </div>
+    <div class="panel-footer">
+        Panel Footer
+    </div>
+</div>
+-->
+</textarea>
+
+
+<!--WELL-->
+<textarea readonly="true" ng-show="bootstrapContentQ"><!--
+<div class="well">Hellow World</div>
+<div class="well well-lg">Hellow World</div>
+<div class="well well-md">Hellow World</div>
+-->
+</textarea>
+
+
+<!--ALERTS-->
+<textarea readonly="true" ng-show="bootstrapContentR"><!--
+<div class="alert alert-success" role="alert">Success</div>
+<div class="alert alert-info" role="alert">Info</div>
+<div class="alert alert-warning" role="alert">Warning</div>
+<div class="alert alert-danger" role="alert">Danger</div> 
+-->
+</textarea>
+
+
+<!--PROGRESSBAR-->
+<textarea readonly="true" ng-show="bootstrapContentS"><!--
+<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">
+    50%
+</div>
+-->
+</textarea>
+
+
+<!--LABEL-->
+<textarea readonly="true" ng-show="bootstrapContentT"><!--
+<span class="label label-default">Default</span>
+<h1>Hello <span class="label label-primary">Primary</span></h1>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">danger</span>
+-->
+</textarea>
+
+
+<!--BADGES-->
+<textarea readonly="true" ng-show="bootstrapContentU"><!--
+<a href="#">Inbox <span class="badge">50</span></a>
+<button class="btn btn-primary" type="button">
+    Message: <span class="badge">2</span>
+</button>
+-->
+</textarea>
+
+<div id="cs_sass"></div>
+<!--IMAGES-->
+<textarea readonly="true" ng-show="bootstrapContentV"><!--
+<img class="thumnail" style="width: 200px" src="images/5c082d6075a20d.jpg">
+<img class="img-rounded" style="width: 200px" src="images/5c082d6075a20d.jpg">
+<img class="img-circle" style="width: 200px" src="images/5c082d6075a20d.jpg">
+-->
+</textarea>
+
+    </div>
+  </div>
+</div>
+<!-------------------------------------END BOOSTRAP------------------------------------->
+<!-------------------------------------END BOOSTRAP------------------------------------->
+<!-------------------------------------END BOOSTRAP------------------------------------->
+
+<div class="spacer"></div>
+
+<!-------------------------------------SASS------------------------------------->
+<!-------------------------------------SASS------------------------------------->
+<!-------------------------------------SASS------------------------------------->
+<div class="content" ng-controller="SassCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="SassTab('contentA')">Preprocessing</li>
+        <li class="list-group-item" ng-click="SassTab('contentB')">Variables</li>
+        <li class="list-group-item" ng-click="SassTab('contentC')">Nesting</li>
+        <li class="list-group-item" ng-click="SassTab('contentD')">Partials</li>
+        <li class="list-group-item" ng-click="SassTab('contentE')">Import</li>
+        <li class="list-group-item" ng-click="SassTab('contentF')">Mixins</li>
+        <li class="list-group-item" ng-click="SassTab('contentG')">Inheretance</li>
+        <li class="list-group-item" ng-click="SassTab('contentH')">Operators</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">Sass</div><br>
+<!--PREPROCESSING-->
+<textarea readonly="true" ng-show="sassContentA"><!--
+sass --watch input.scss output.css
+sass --watch app/sass:public/stylesheets
+-->
+</textarea>
+
+<!--VARIABLES-->
+<textarea readonly="true" ng-show="sassContentB"><!--
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+-->
+</textarea>
+
+<!--NESTING-->
+<textarea readonly="true" ng-show="sassContentC"><!--
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+-->
+</textarea>
+
+<!--PARTIALS-->
+<textarea readonly="true" ng-show="sassContentD"><!--
+You can create partial Sass files that contain little 
+snippets of CSS that you can include in other Sass files. 
+This is a great way to modularize your CSS and help keep
+ things easier to maintain. A partial is simply a Sass file 
+ named with a leading underscore. You might name it 
+ something like _partial.scss. The underscore lets Sass know that 
+ the file is only a partial file and that it should not be 
+ generated into a CSS file. Sass partials are used with the 
+ @import directive.
+
+ _partial.scss
+
+ @import "partial";
+ -->
+</textarea>
+
+<!--IMPORT-->
+<textarea readonly="true" ng-show="sassContentE"><!--
+Let's say you have a couple of Sass files, _reset.scss 
+and base.scss. We want to import _reset.scss into base.scss.
+
+// _reset.scss
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+// base.scss
+
+@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+//NESTED
+
+body {
+  @import 'reset';
+}
+-->
+</textarea>
+
+<!--MIXINS-->
+<textarea readonly="true" ng-show="sassContentF"><!--
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box { @include transform(rotate(30deg)); }
+-->
+</textarea>
+
+<!--INHERETANCE-->
+<textarea readonly="true" ng-show="sassContentG"><!--
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
+-->
+</textarea>
+<div id="cs_jquery"></div>
+<!--OPERATORS-->
+<textarea readonly="true" ng-show="sassContentH"><!--
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+-->
+</textarea>
+
+    </div>
+  </div>
+</div>
+<!-------------------------------------END SASS------------------------------------->
+<!-------------------------------------END SASS------------------------------------->
+<!-------------------------------------END SASS------------------------------------->
+
+
+<div class="spacer"></div>
+
+<!-------------------------------------JQUERY------------------------------------->
+<!-------------------------------------JQUERY------------------------------------->
+<!-------------------------------------JQUERY------------------------------------->
+<div class="content" ng-controller="JqueryCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="JqueryTab('contentA')">jQuery selectors</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentB')">jQuery Pseudo-Selectors</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentC')">jQuery show, hide and toggle functions</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentD')">jQuery fade functions</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentE')">jQuery slide functions</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentF')">jQuery add, remove and toggle CSS classes</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentG')">Change element’s CSS property</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentH')">Element’s width and height</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentI')">Element’s HTML</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentJ')">Textbox values</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentK')">jQuery Animate</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentL')">data() and removeData()</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentM')">preventDefault()</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentN')">delay()</li>
+        <li class="list-group-item" ng-click="JqueryTab('contentO')">append() and prepend()</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">Jquery</div><br>
+<!--jQuery selectors-->
+<textarea readonly="true" ng-show="jqueryContentA"><!--
+$("div").anything() // get all the element of a particular type 
+
+$("#elemID").anything() // get element by id 
+
+$(".className").anything() // get element by css class 
+
+$("{id*=’val’}").anything() // get element by id which contains a string 
+
+$(“{id^=’val’}").anything() // get element by id which starts with a string 
+
+$("{id$=’val’}").anything() // get element by id where id ends with a string 
+-->
+</textarea>
+
+<!--jQuery Pseudo-Selectors-->
+<textarea readonly="true" ng-show="jqueryContentB"><!--
+$(":parent") // all elements with child nodes 
+
+$(":header") // all header elements h1 - h6 
+
+$(":empty") // all elements with no child or text 
+
+$(":contains(something)") // all elements with text "something" 
+
+$("li:even") // all elements with even index li element 
+
+$("li:odd") // all elements with odd index li element 
+
+$("li:gt(2)") // all li elements with index greater than the specified
+ 
+$("li:lt(2)") // all li elements with index less than the specified 
+-->
+</textarea>
+
+<!--jQuery show, hide and toggle functions-->
+<textarea readonly="true" ng-show="jqueryContentC"><!--
+$("#elemID").hide() // hide the element 
+
+$("#elemID").show() // show the element 
+
+$("#elemID").toggle() // toggle show/hide the element 
+
+$("#elemID").toggle(500) // toggle show/hide the element with transition 
+
+$("#elemID").toggle(500,function(){
+        alert("me was toggled"); // toggle and do something when animation is complete
+}); 
+
+$("#elemID").show(500,function(){
+        alert("showed"); // show and do something when animation is complete
+}); 
+
+$("#elemID").hide(500,function(){
+        alert("hidden"); // hide and do something when animation is complete
+}); 
+-->
+</textarea>
+
+<!--jQuery fade functions-->
+<textarea readonly="true" ng-show="jqueryContentD"><!--
+$("#elemID").fadeIn(800); // fade in show 
+
+$("#elemID").fadeOut(800); // fade out hide 
+
+$("#elemID").fadeTo(800,0.5); // fade to specific opacity 
+
+$("#elemID").fadeTo(800,0.5,function(){
+        // fade to specific opacity and do something when animation is complete
+        alert(‘me was faded to 0.5 opacity’);
+});
+
+$("#elemID").fadeIn(800,function(){
+        // faded In and do something when animation is complete
+        alert(‘me was faded in’);
+});
+
+$(“#elemID”).fadeOut(800,function(){
+        // faded Out and do something when animation is complete
+        alert(‘me was faded out’);
+}); 
+-->
+</textarea>
+
+<!--jQuery slide functions-->
+<textarea readonly="true" ng-show="jqueryContentE"><!--
+$("#elemID").slideUp(800); // Slide Up 
+
+$("#elemID").slideDown(800); // Slide Down 
+
+$("#elemID").slideToggle(800); // Slide Toggle up/down 
+
+$("#elemID").slideUp(800,function(){
+         // slide up and do something when animation is complete
+         alert(‘me was slide up’);
+});
+
+$("#elemID").slideDown(800,function(){
+         // slide down and do something when animation is complete
+         alert(‘me was slide down’);
+});
+
+$("#elemID").slideToggle(800,function(){
+         // slide toggle and do something when animation is complete
+         alert(‘me was slide toggled’);
+}); 
+-->
+</textarea>
+
+<!--jQuery add, remove and toggle CSS classes-->
+<textarea readonly="true" ng-show="jqueryContentF"><!--
+$("#elemID").addClass(‘someClassName’); // add class to the element 
+
+$("#elemID").removeClass(‘someClassName’); // remove class from the element
+
+$("#elemID").toggleClass(‘someClassName’); // toggle – add/remove class to the element
+
+$("#elemID").removeClass(‘someClassName’).addClass(‘newClass’); // remove and add classes together to the element 
+-->
+</textarea>
+
+<!--Change element’s CSS property-->
+<textarea readonly="true" ng-show="jqueryContentG"><!--
+$("#elemID").css('font-size','18px'); 
+
+$("#elemID").css('display','none'); 
+
+$("#elemID").css('background','red'); 
+
+$("#elemID").css('width','200px'); 
+
+$("#elemID").css('opacity','0.6'); 
+-->
+</textarea>
+
+<!--Element’s width and height-->
+<textarea readonly="true" ng-show="jqueryContentH"><!--
+var width = $("#elemID").width(); // get the element’s width 
+
+var height = $("#elemID").height(); // get the element’s height $("#elemID").width(500); // set the element’s width 
+
+$("#elemID").height(200); // set the element’s height 
+-->
+</textarea>
+
+<!--Element’s HTML-->
+<textarea readonly="true" ng-show="jqueryContentI"><!--
+var htmlContent = $("#elemID").html(); // get the element’s html 
+
+$("#elemID").html("Hello world!"); // set the element’s html 
+-->
+</textarea>
+
+<!--Textbox values-->
+<textarea readonly="true" ng-show="jqueryContentJ"><!--
+var textVal = $("#inputID").val(); // get the value of textbox 
+
+$("#inputID").val("Hello world!"); // set the value of textbox 
+-->
+</textarea>
+
+<!--jQuery Animate-->
+<textarea readonly="true" ng-show="jqueryContentK"><!--
+$("#elemID").animate({ opacity: 0.5 }, 800); 
+
+$("#elemID").animate({ opacity: 0.5 }, 800,function(){
+        alert("I’m being animated");
+}); 
+-->
+</textarea>
+
+<!--data() and removeData()-->
+<textarea readonly="true" ng-show="jqueryContentL"><!--
+$("#elemID").data("dataKey","value"); // set the data having some value with a key 
+
+// set multiple data
+$("#elemID").data({keyOne: "dataOne", keyTwo: "dataTow"});  
+
+var data = $("#elemID").data("dataKey"); // get the data by key 
+
+$("#elemID").removeData("dataKey"); // remove the data 
+-->
+</textarea>
+
+<!--preventDefault()-->
+<textarea readonly="true" ng-show="jqueryContentM"><!--
+$("a").click(function(event){ // take the event
+         event.preventDefault(); // prevent default behaviour
+         alert("I was clicked"); // do something
+});
+-->
+</textarea>
+
+<!--delay()-->
+<textarea readonly="true" ng-show="jqueryContentN"><!--
+$('elemID').show().delay(1500).hide(); // div will be visible for 1.5 seconds before hiding. 
+-->
+</textarea>
+
+<div id="cs_vuejsvuex"></div>
+<!--append() and prepend()-->
+<textarea readonly="true" ng-show="jqueryContentO"><!--
+// selector can be anything like class or ID or element
+$('selector').append(“Hello World!”);
+-->
+</textarea>
+
+    </div>
+  </div>
+</div>
+<!-------------------------------------END JQUERY------------------------------------->
+<!-------------------------------------END JQUERY------------------------------------->
+<!-------------------------------------END JQUERY------------------------------------->
+
+
+<div class="spacer"></div>
+
+<!-------------------------------------VUEJS+VUEX------------------------------------->
+<!-------------------------------------VUEJS+VUEX------------------------------------->
+<!-------------------------------------VUEJS+VUEX------------------------------------->
+<div class="content" ng-controller="VuejsCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="VuejsTab('contentA')">Navigation Menu</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentB')">Inline Editor</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentC')">Order Form</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentD')">Instant Search</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentE')">Switchable Grid</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentF')">Props</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentG')">Mounting</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentH')">Method</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentI')">Actions</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentJ')">Mutations</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentK')">States</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentL')">Getters</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentM')">Athentication</li>
+        <li class="list-group-item" ng-click="VuejsTab('contentN')">Guards</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">VueJS + Vuex</div><br>
+<!--Navigation Menu-->
+<textarea readonly="true" ng-show="vuejsContentA"><!--
+<div id="main">
+  The navigation menu will get the value of the "active" variable as a class
+  To stops the page from jumping when a link is clicked 
+      we use the "prevent" modifier (short for preventDefault)
+
+  <nav v-bind:class="active" v-on:click.prevent>
+
+        When a link in the menu is clicked, we call the makeActive method, 
+        defined in the JavaScript Vue instance. It will change the value of "active"
+
+        <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
+        <a href="#" class="projects" v-on:click="makeActive('projects')">Projects</a>
+        <a href="#" class="services" v-on:click="makeActive('services')">Services</a>
+        <a href="#" class="contact" v-on:click="makeActive('contact')">Contact</a>
+    </nav>
+    The mustache expression will be replaced with the value of "active".
+         It will automatically update to reflect any changes
+    <p>You chose <b>{{active}}</b></p>
+</div>
+
+
+// Creating a new Vue instance and pass in an options object.
+var demo = new Vue({
+
+    // A DOM element to mount our view model.
+    el: '#main',
+
+    // This is the model.
+    // Define properties and give them initial values.
+    data: {
+        active: 'home'
+    },
+
+    // Functions we will be using.
+    methods: {
+        makeActive: function(item){
+            // When a model is changed, the view will be automatically updated.
+            this.active = item;
+        }
+    }
+});
+-->
+</textarea>
+
+<!--Inline Editor-->
+<textarea readonly="true" ng-show="vuejsContentB"><!--
+v-cloak hides any un-compiled data bindings until the Vue instance is ready.
+When the element is clicked the hideTooltp() method is called.
+
+<div id="main" v-cloak v-on:click="hideTooltip" >
+
+    This is the tooltip. 
+         v-on:clock.stop is an event handler for clicks, with a modifier that stops event propagation.
+         v-if makes sure the tooltip is shown only when the "showtooltip" variable is truthful
+
+    <div class="tooltip" v-on:click.stop v-if="show_tooltip">
+
+        v-model binds the contents of the text field with the "text_content" model.
+         Any changes to the text field will automatically update the value, and
+         all other bindings on the page that depend on it.
+
+        <input type="text" v-model="text_content" />
+    </div>
+
+    When the paragraph is clicked, call the "toggleTooltip" method and stop event propagation.
+    The mustache expression will be replaced with the value of "text_content".
+         It will automatically update to reflect any changes to that variable.
+
+    <p v-on:click.stop="toggleTooltip">{{text_content}}</p>
+</div>
+
+
+// Creating a new Vue instance and pass in an options object.
+var demo = new Vue({
+
+    // A DOM element to mount our view model.
+    el: '#main',
+
+    // Define properties and give them initial values.
+    data: {
+        show_tooltip: false,
+        text_content: 'Edit me.'
+    },
+
+    // Functions we will be using.
+    methods: {
+        hideTooltip: function(){
+            // When a model is changed, the view will be automatically updated.
+            this.show_tooltip = false;
+        },
+        toggleTooltip: function(){
+            this.show_tooltip = !this.show_tooltip;
+        }
+    }
+})
+-->
+</textarea>
+
+<!--Order Form-->
+<textarea readonly="true" ng-show="vuejsContentC"><!--
+v-cloak hides any un-compiled data bindings until the Vue instance is ready.
+
+<form id="main" v-cloak>
+    <h1>Services</h1>
+
+    <ul>
+        Loop through the services array, assign a click handler, and set or
+             remove the "active" css class if needed
+        <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active': service.active}">
+            Display the name and price for every entry in the array .
+            Vue.js has a built in currency filter for formatting the price
+            {{service.name}} <span>{{service.price | currency}}</span>
+        </li>
+    </ul>
+
+    <div class="total">
+        Calculate the total price of all chosen services. Format it as currency.
+        Total: <span>{{total() | currency}}</span>
+    </div>
+</form>
+
+
+// Define a custom filter called "currency". 
+Vue.filter('currency', function (value) {
+    return '$' + value.toFixed(2);
+});
+
+var demo = new Vue({
+    el: '#main',
+    data: {
+        // Define the model properties. The view will loop
+        // through the services array and genreate a li
+        // element for every one of its items.
+        services: [
+            {
+                name: 'Web Development',
+                price: 300,
+                active:true
+            },{
+                name: 'Design',
+                price: 400,
+                active:false
+            },{
+                name: 'Integration',
+                price: 250,
+                active:false
+            },{
+                name: 'Training',
+                price: 220,
+                active:false
+            }
+        ]
+    },
+    methods: {
+        toggleActive: function(s){
+            s.active = !s.active;
+        },
+        total: function(){
+
+            var total = 0;
+
+            this.services.forEach(function(s){
+                if (s.active){
+                    total+= s.price;
+                }
+            });
+
+           return total;
+        }
+    }
+});
+
+
+
+To display the prices in a correct format we will have to define a simple currency filter. Filters allow us to lazily modify or filter the model data. To define a custom filter we have to use the following syntax:
+
+// Define a custom filter called "currency". 
+Vue.filter('currency', function (value) {
+    return '$' + value.toFixed(2);
+});
+As you can see our filter is pretty straightforward - it adds a dollar sign and proper number decimals. Just like in Angular filters are applied using the | syntax - {{ some_data | filter }}.
+-->
+</textarea>
+
+<!--Instant Search-->
+<textarea readonly="true" ng-show="vuejsContentD"><!--
+<form id="main" v-cloak>
+    <div class="bar">
+        Create a binding between the searchString model and the text field
+
+        <input type="text" v-model="searchString" placeholder="Enter your search terms" />
+    </div>
+
+    <ul>
+        Render a li element for every entry in the computed filteredArticles array.
+
+        <li v-for="article in filteredArticles">
+            <a v-bind:href="article.url"><img v-bind:src="article.image" /></a>
+            <p>{{article.title}}</p>
+        </li>
+    </ul>
+</form>
+
+
+var demo = new Vue({
+    el: '#main',
+    data: {
+        searchString: "",
+
+        // The data model. These items would normally be requested via AJAX,
+        // but are hardcoded here for simplicity.
+
+        articles: [
+            {
+                "title": "What You Need To Know About CSS Variables",
+                "url": "https://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables/",
+                "image": "https://tutorialzine.com/media/2016/03/css-variables.jpg"
+            },
+            {
+                "title": "Freebie: 4 Great Looking Pricing Tables",
+                "url": "https://tutorialzine.com/2016/02/freebie-4-great-looking-pricing-tables/",
+                "image": "https://tutorialzine.com/media/2016/02/great-looking-pricing-tables.jpg"
+            },
+            {
+                "title": "20 Interesting JavaScript and CSS Libraries for February 2016",
+                "url": "https://tutorialzine.com/2016/02/20-interesting-javascript-and-css-libraries-for-february-2016/",
+                "image": "https://tutorialzine.com/media/2016/02/interesting-resources-february.jpg"
+            },
+            {
+                "title": "Quick Tip: The Easiest Way To Make Responsive Headers",
+                "url": "https://tutorialzine.com/2016/02/quick-tip-easiest-way-to-make-responsive-headers/",
+                "image": "https://tutorialzine.com/media/2016/02/quick-tip-responsive-headers.png"
+            },
+            {
+                "title": "Learn SQL In 20 Minutes",
+                "url": "https://tutorialzine.com/2016/01/learn-sql-in-20-minutes/",
+                "image": "https://tutorialzine.com/media/2016/01/learn-sql-20-minutes.png"
+            },
+            {
+                "title": "Creating Your First Desktop App With HTML, JS and Electron",
+                "url": "https://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron/",
+                "image": "https://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png"
+            }
+        ]
+    },
+    computed: {
+        // A computed property that holds only those articles that match the searchString.
+        filteredArticles: function () {
+            var articles_array = this.articles,
+                searchString = this.searchString;
+
+            if(!searchString){
+                return articles_array;
+            }
+
+            searchString = searchString.trim().toLowerCase();
+
+            articles_array = articles_array.filter(function(item){
+                if(item.title.toLowerCase().indexOf(searchString) !== -1){
+                    return item;
+                }
+            })
+
+            // Return an array with the filtered data.
+            return articles_array;;
+        }
+    }
+});
+-->
+</textarea>
+
+<!--Switchable Grid-->
+<textarea readonly="true" ng-show="vuejsContentE">
+<!--
+<form id="main" v-cloak>
+    <div class="bar">
+
+        These two buttons switch the layout variable,
+        which causes the correct UL to be shown.
+
+        <a class="list-icon" v-bind:class="{ 'active': layout == 'list'}" v-on:click="layout = 'list'"></a>
+        <a class="grid-icon" v-bind:class="{ 'active': layout == 'grid'}" v-on:click="layout = 'grid'"></a>
+    </div>
+
+    We have two layouts. We choose which one to show depending on the "layout" binding
+
+    <ul v-if="layout == 'grid'" class="grid">
+        A view with big photos and no text
+        <li v-for="a in articles">
+            <a v-bind:href="a.url" target="_blank"><img v-bind:src="a.image.large" /></a>
+        </li>
+    </ul>
+
+    <ul v-if="layout == 'list'" class="list">
+        A compact view smaller photos and titles
+        <li v-for="a in articles">
+            <a v-bind:href="a.url" target="_blank"><img v-bind:src="a.image.small" /></a>
+            <p>{{a.title}}</p>
+        </li>
+    </ul>
+</form>
+
+
+var demo = new Vue({
+    el: '#main',
+    data: {
+        // The layout mode, possible values are "grid" or "list".
+        layout: 'grid',
+
+        articles: [{
+            "title": "What You Need To Know About CSS Variables",
+            "url": "https://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2016/03/css-variables.jpg",
+                "small": "https://tutorialzine.com/media/2016/03/css-variables.jpg"
+            }
+        },
+        {
+            "title": "Freebie: 4 Great Looking Pricing Tables",
+            "url": "https://tutorialzine.com/2016/02/freebie-4-great-looking-pricing-tables/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2016/02/great-looking-pricing-tables.jpg",
+                "small": "https://tutorialzine.com/media/2016/02/great-looking-pricing-tables.jpg"
+            }
+        },
+        {
+            "title": "20 Interesting JavaScript and CSS Libraries for February 2016",
+            "url": "https://tutorialzine.com/2016/02/20-interesting-javascript-and-css-libraries-for-february-2016/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2016/02/interesting-resources-february.jpg",
+                "small": "https://tutorialzine.com/media/2016/02/interesting-resources-february.jpg"
+            }
+        },
+        {
+            "title": "Quick Tip: The Easiest Way To Make Responsive Headers",
+            "url": "https://tutorialzine.com/2016/02/quick-tip-easiest-way-to-make-responsive-headers/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2016/02/quick-tip-responsive-headers.png",
+                "small": "https://tutorialzine.com/media/2016/02/quick-tip-responsive-headers.png"
+            }
+        },
+        {
+            "title": "Learn SQL In 20 Minutes",
+            "url": "https://tutorialzine.com/2016/01/learn-sql-in-20-minutes/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2016/01/learn-sql-20-minutes.png",
+                "small": "https://tutorialzine.com/media/2016/01/learn-sql-20-minutes.png"
+            }
+        },
+        {
+            "title": "Creating Your First Desktop App With HTML, JS and Electron",
+            "url": "https://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron/",
+            "image": {
+                "large": "https://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png",
+                "small": "https://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png"
+            }
+        }]
+
+    }
+});
+-->
+</textarea>
+
+<!--Props-->
+<textarea readonly="true" ng-show="vuejsContentF"><!--
+// inside app.vue
+<template>
+  <hello :myData='myData'></hello>
+</template> 
+//:myData is binding the property from the components data field, without using it, you will get myData as `string` in the child component.
+
+<script>
+  export default {
+  name: 'app',
+  data() {
+    return {
+      myData: 'this is my data'
+    }
+  },
+  components: {
+    Hello
+  }
+</script>
+
+
+Vue.component('hello', {
+  render: function (createElement) {
+    return createElement(
+      <tag-names>
+    )
+  },
+  props: {
+    myData: parentComponent.myData // you need to give the parent components' data here.
+  }
+})
+
+
+Prop Types
+props: {
+  title: String,
+  likes: Number,
+  isPublished: Boolean,
+  commentIds: Array,
+  author: Object
+}
+
+Passing Static or Dynamic Props
+So far, you’ve seen props passed a static value, like in:
+
+<blog-post title="My journey with Vue"></blog-post>
+You’ve also seen props assigned dynamically with v-bind, such as in:
+
+Dynamically assign the value of a variable 
+<blog-post v-bind:title="post.title"></blog-post>
+
+Dynamically assign the value of a complex expression
+<blog-post
+  v-bind:title="post.title + ' by ' + post.author.name"
+></blog-post>
+In the two examples above, we happen to pass string values, but any type of value can actually be passed to a prop.
+-->
+</textarea>
+
+<!--MOUNTING-->
+<textarea readonly="true" ng-show="vuejsContentG"><!--
+<template>
+  <div class="container">
+    <div class="sub-container">
+      <h3>Products:</h3>
+
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+
+        <tr v-for="product in products" :key="product.id">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "products",
+  mounted() {
+    this.$store.dispatch("getAllProducts");
+  },
+  computed: {
+    products() {
+      return this.$store.getters.products;
+    }
+  }
+};
+</script>
+-->
+</textarea>
+
+<!--METHOD-->
+<textarea readonly="true" ng-show="vuejsContentH"><!--
+<template>
+  <div class="sub-container">
+    <h3 v-if="todos.length > 0">Current({{todos.length}})</h3>
+
+    <table>
+      <tr>
+        <th>Current List</th>
+        <th>Options</th>
+      </tr>
+      <tr v-for="todo in todos">
+        <td>{{todo.body}}</td>
+        <td style="width: 190px;">
+          <button type="button" @click="edit(todo)">Edit</button>
+          <button type="button" @click="complete(todo)">Complete</button>
+          <button type="button" @click="remove(todo)">Remove</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</template>
+<script>
+export default {
+  methods: {
+    edit(todo) {
+      this.$store.dispatch("editTodo", todo);
+    },
+    complete(todo) {
+      this.$store.dispatch("completeTodo", todo);
+    },
+    remove(todo) {
+      this.$store.dispatch("removeTodo", todo);
+    }
+  },
+  computed: {
+    todos() {
+      return this.$store.getters.todos;
+    }
+  }
+};
+</script>
+-->
+</textarea>
+
+<!--ACTIONS-->
+<textarea readonly="true" ng-show="vuejsContentI"><!--
+<template>
+  <div class="sub-container">
+    <h4>Input New Todos</h4>
+    <input :value="newTodo" @change="getTodo" placeholder="I need to..." style="width: 100%">
+    <button @click="addTodo">Add Todo</button>
+  </div>
+</template>
+>
+<script>
+export default {
+  methods: {
+    getTodo(e) {
+      this.$store.dispatch("getTodo", e.target.value);
+    },
+    addTodo() {
+      this.$store.dispatch("addTodo");
+      this.$store.dispatch("clearTodo");
+    }
+  },
+  computed: {
+    newTodo() {
+      return this.$store.getters.newTodo;
+    }
+  }
+};
+</script>
+
+
+  actions: {
+    getTodo({ commit }, todo) {
+      commit("GET_TODO", todo);
+    },
+    addTodo({ commit }) {
+      commit("ADD_TODO");
+    },
+    editTodo({ commit }, todo) {
+      commit("EDIT_TODO", todo);
+    },
+    removeTodo({ commit }, todo) {
+      commit("REMOVE_TODO", todo);
+    },
+    completeTodo({ commit }, todo) {
+      commit("COMPLETE_TODO", todo);
+    },
+    clearTodo({ commit }) {
+      commit("CLEAR_TODO");
+    }
+  },
+  -->
+</textarea>
+
+<!--MUTATIONS-->
+<textarea readonly="true" ng-show="vuejsContentJ"><!--
+  mutations: {
+    GET_TODO(state, todo) {
+      state.newTodo = todo;
+    },
+    ADD_TODO(state) {
+      state.todos.push({
+        body: state.newTodo,
+        completed: false
+      });
+    },
+    EDIT_TODO(state, todo) {
+      var todos = state.todos;
+      todos.splice(todos.indexOf(todo), 1);
+      state.todos = todos;
+      state.newTodo = todo.body;
+    },
+    REMOVE_TODO(state, todo) {
+      var todos = state.todos;
+      todos.splice(todos.indexOf(todo), 1);
+    },
+    COMPLETE_TODO(state, todo) {
+      todo.completed = !todo.completed;
+    },
+    CLEAR_TODO(state) {
+      state.newTodo = "";
+    }
+  },
+  -->
+</textarea>
+
+<!--STATES-->
+<textarea readonly="true" ng-show="vuejsContentK"><!--
+  state: {
+    todos: [],
+    newTodo: ""
+  },
+</textarea>
+
+GETTERS
+<textarea readonly="true" ng-show="vuejsContentL">
+<template>
+  <div class="sub-container">
+    <h3>Todos:</h3>
+    <h3 v-if="completed.length > 0">Completed({{completed.length}})</h3>
+
+    <table>
+      <tr>
+        <th>Completed List</th>
+        <th>Options</th>
+      </tr>
+      <tr v-for="todo in completed">
+        <td>{{todo.body}}</td>
+        <td style="width: 80px;">
+          <button type="button" @click="remove(todo)">Remove</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    remove(todo) {
+      this.$store.dispatch("removeTodo", todo);
+    }
+  },
+  computed: {
+    completed() {
+      return this.$store.getters.completedTodos;
+    }
+  }
+};
+</script>
+-->
+</textarea>
+
+<!--AUTHENTICATION-->
+<textarea readonly="true" ng-show="vuejsContentM"><!--
+import Vue from "vue";
+import axios from "axios";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
+
+const URL = "http://localhost:4000/api/";
+
+export const UserModule = {
+  state: {
+    isLoggedIn: !!localStorage.getItem("token")
+  },
+  mutations: {
+    LOGIN_USER(state) {
+      state.isLoggedIn = true;
+    },
+    lOGOUT_USER(state) {
+      state.isLoggedIn = false;
+    }
+  },
+  actions: {
+    loginUser({ commit }, payload) {
+      this.loginError = false;
+      axios
+        .post(URL + "login", {
+          email: payload.email,
+          password: payload.password
+        })
+        .then(response => {
+          commit("LOGIN_USER");
+          localStorage.setItem("token", response.data.token);
+          this.$router.push({ name: "/dashboard" });
+        })
+        .catch(error => {
+          console.log(error);
+          this.loginError = true;
+        });
+    },
+    logoutUser({ commit }) {
+      localStorage.removeItem("token");
+      commit("lOGOUT_USER");
+      this.$router.push({ name: "login" });
+    }
+  },
+  getters: {
+    logCheck: state => state.isLoggedIn
+  }
+};
+
+
+
+<template>
+  <div class="sub-container">
+    <form class="form-signin" v-on:submit.prevent="submitLogin">
+      <h3>Please sign in</h3>
+
+      <label for="inputEmail">Email address</label>
+      <input
+        type="email"
+        id="inputEmail"
+        class="form-control"
+        placeholder="Email address"
+        required
+        autofocus
+        v-model="email"
+      >
+      
+      <label for="inputPassword">Password</label>
+      <input
+        type="password"
+        id="inputPassword"
+        class="form-control"
+        placeholder="Password"
+        required
+        v-model="password"
+      >
+      
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: "",
+      password: "",
+      loginError: false
+    };
+  },
+  methods: {
+    submitLogin() {
+      this.$store.dispatch("loginUser", this.$data);
+    }
+  }
+};
+</script>
+-->
+</textarea>
+
+<!--GUARDS-->
+<textarea readonly="true" ng-show="vuejsContentN"><!--
+import Vue from "vue";
+import Router from "vue-router";
+import Home from "./views/Home.vue";
+
+Vue.use(Router);
+const router = new Router({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home
+    },
+    {
+      path: "/dashboard",
+      name: "dashboard",
+      component: () => import("./views/Dashboard.vue"),
+      meta: { requiresAuth: true }
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("./views/Login.vue")
+    },
+    {
+      path: "/logout",
+      name: "logout",
+      component: () => import("./views/Logout.vue")
+    },
+    {
+      path: "/products",
+      name: "products",
+      component: () => import("./views/Products.vue")
+    },
+    {
+      path: "/todos",
+      name: "todos",
+      component: () => import("./views/Todos.vue")
+    }
+  ]
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(route => route.meta.requiresAuth)) {
+    if (!localStorage.getItem("token")) {
+      next({
+        path: "/login",
+        query: {
+          redirect: to.fullPath
+        }
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
+export default router;
+-->
+</textarea>
+<div id="cs_reactjsredux"></div>
+    </div>
+  </div>
+</div>
+<!-------------------------------------END VUEJS+VUEX------------------------------------->
+<!-------------------------------------END VUEJS+VUEX------------------------------------->
+<!-------------------------------------END VUEJS+VUEX------------------------------------->
+
+
+<div class="spacer"></div>
+
+<!-------------------------------------REACTJS+REDUX------------------------------------->
+<!-------------------------------------REACTJS+REDUX------------------------------------->
+<!-------------------------------------REACTJS+REDUX------------------------------------->
+<div class="content" ng-controller="ReactjsCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="ReactjsTab('contentA')">Timer</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentB')">Navigation Menu</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentC')">Real Time Search</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentD')">Order Form</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentE')">Image app with AJAX</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentF')">Props</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentG')">Mounting</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentH')">Method</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentI')">Actions</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentJ')">Reducers</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentK')">Combine Reducer</li>
+        <li class="list-group-item" ng-click="ReactjsTab('contentL')">Authentication</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">ReactJS + Redux</div><br>
+<!--TIMER-->
+<textarea readonly="true" ng-show="reactjsContentA"><!--
+var TimerExample = React.createClass({
+
+    getInitialState: function(){
+
+        // This is called before our render function. The object that is 
+        // returned is assigned to this.state, so we can use it later.
+
+        return { elapsed: 0 };
+    },
+
+    componentDidMount: function(){
+
+        // componentDidMount is called by react when the component 
+        // has been rendered on the page. We can set the interval here:
+
+        this.timer = setInterval(this.tick, 50);
+    },
+
+    componentWillUnmount: function(){
+
+        // This method is called immediately before the component is removed
+        // from the page and destroyed. We can clear the interval here:
+
+        clearInterval(this.timer);
+    },
+
+    tick: function(){
+
+        // This function is called every 50 ms. It updates the 
+        // elapsed counter. Calling setState causes the component to be re-rendered
+
+        this.setState({elapsed: new Date() - this.props.start});
+    },
+
+    render: function() {
+        
+        var elapsed = Math.round(this.state.elapsed / 100);
+
+        // This will give a number with one digit after the decimal dot (xx.x):
+        var seconds = (elapsed / 10).toFixed(1);    
+
+        // Although we return an entire <p> element, react will smartly update
+        // only the changed parts, which contain the seconds variable.
+
+        return <p>This example was started <b>{seconds} seconds</b> ago.</p>;
+    }
+});
+
+
+ReactDOM.render(
+    <TimerExample start={Date.now()} />,
+    document.getElementById('container')
+);
+-->
+</textarea>
+
+<!--NAVIGATION MENU-->
+<textarea readonly="true" ng-show="reactjsContentB"><!--
+var MenuExample = React.createClass({
+
+    getInitialState: function(){
+        return { focused: 0 };
+    },
+
+    clicked: function(index){
+
+        // The click handler will update the state with
+        // the index of the focused menu entry
+
+        this.setState({focused: index});
+    },
+
+    render: function() {
+
+        // Here we will read the items property, which was passed
+        // as an attribute when the component was created
+
+        var self = this;
+
+        // The map method will loop over the array of menu entries,
+        // and will return a new array with <li> elements.
+
+        return (
+            <div>
+                <ul>{ this.props.items.map(function(m, index){
+        
+                    var style = '';
+        
+                    if(self.state.focused == index){
+                        style = 'focused';
+                    }
+        
+                    // Notice the use of the bind() method. It makes the
+                    // index available to the clicked function:
+        
+                    return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
+        
+                }) }
+                        
+                </ul>
+                
+                <p>Selected: {this.props.items[this.state.focused]}</p>
+            </div>
+        );
+
+    }
+});
+
+// Render the menu component on the page, and pass an array with menu options
+
+ReactDOM.render(
+    <MenuExample items={ ['Home', 'Services', 'About', 'Contact us'] } />,
+    document.getElementById('container')
+);
+-->
+</textarea>
+
+<!--REAL TIME SEARCH-->
+<textarea readonly="true" ng-show="reactjsContentC"><!--
+// Let's create a "real-time search" component
+
+var SearchExample = React.createClass({
+
+    getInitialState: function(){
+        return { searchString: '' };
+    },
+
+    handleChange: function(e){
+
+        // If you comment out this line, the text box will not change its value.
+        // This is because in React, an input cannot change independently of the value
+        // that was assigned to it. In our case this is this.state.searchString.
+
+        this.setState({searchString:e.target.value});
+    },
+
+    render: function() {
+
+        var libraries = this.props.items,
+            searchString = this.state.searchString.trim().toLowerCase();
+
+
+        if(searchString.length > 0){
+
+            // We are searching. Filter the results.
+
+            libraries = libraries.filter(function(l){
+                return l.name.toLowerCase().match( searchString );
+            });
+
+        }
+
+        return <div>
+                    <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Type here" />
+
+                    <ul> 
+
+                        { libraries.map(function(l){
+                            return <li>{l.name} <a href={l.url}>{l.url}</a></li>
+                        }) }
+
+                    </ul>
+
+                </div>;
+
+    }
+});
+
+                                                                                                                                                             
+var libraries = [
+
+    { name: 'Backbone.js', url: 'http://documentcloud.github.io/backbone/'},
+    { name: 'AngularJS', url: 'https://angularjs.org/'},
+    { name: 'jQuery', url: 'http://jquery.com/'},
+    { name: 'Prototype', url: 'http://www.prototypejs.org/'},
+    { name: 'React', url: 'http://facebook.github.io/react/'},
+    { name: 'Ember', url: 'http://emberjs.com/'},
+    { name: 'Knockout.js', url: 'http://knockoutjs.com/'},
+    { name: 'Dojo', url: 'http://dojotoolkit.org/'},
+    { name: 'Mootools', url: 'http://mootools.net/'},
+    { name: 'Underscore', url: 'http://documentcloud.github.io/underscore/'},
+    { name: 'Lodash', url: 'http://lodash.com/'},
+    { name: 'Moment', url: 'http://momentjs.com/'},
+    { name: 'Express', url: 'http://expressjs.com/'},
+    { name: 'Koa', url: 'http://koajs.com/'},
+
+];
+
+// Render the SearchExample component on the page
+
+ReactDOM.render(
+    <SearchExample items={ libraries } />,
+    document.getElementById('container')
+);
+-->
+</textarea>
+
+<!--ORDER FORM-->
+<textarea readonly="true" ng-show="reactjsContentD"><!--
+// This is more complex example that uses two components -
+// a service chooser form, and the individual services inside it.
+
+
+var ServiceChooser = React.createClass({
+
+    getInitialState: function(){
+        return { total: 0 };
+    },
+
+    addTotal: function( price ){
+        this.setState( { total: this.state.total + price } );
+    },
+
+    render: function() {
+
+        var self = this;
+
+        var services = this.props.items.map(function(s){
+
+            // Create a new Service component for each item in the items array.
+            // Notice that I pass the self.addTotal function to the component.
+
+            return <Service name={s.name} price={s.price} active={s.active} addTotal={self.addTotal} />;
+        });
+
+        return <div>
+                    <h1>Our services</h1>
+                    
+                    <div id="services">
+                        {services}
+
+                        <p id="total">Total <b>${this.state.total.toFixed(2)}</b></p>
+
+                    </div>
+
+                </div>;
+
+    }
+});
+
+
+var Service = React.createClass({
+
+    getInitialState: function(){
+        return { active: false };
+    },
+
+    clickHandler: function (){
+
+        var active = !this.state.active;
+
+        this.setState({ active: active });
+        
+        // Notify the ServiceChooser, by calling its addTotal method
+        this.props.addTotal( active ? this.props.price : -this.props.price );
+
+    },
+
+    render: function(){
+
+        return  <p className={ this.state.active ? 'active' : '' } onClick={this.clickHandler}>
+                    {this.props.name} <b>${this.props.price.toFixed(2)}</b>
+                </p>;
+
+    }
+
+});
+
+
+var services = [
+    { name: 'Web Development', price: 300 },
+    { name: 'Design', price: 400 },
+    { name: 'Integration', price: 250 },
+    { name: 'Training', price: 220 }
+];
+
+
+// Render the ServiceChooser component, and pass the array of services
+
+ReactDOM.render(
+    <ServiceChooser items={ services } />,
+    document.getElementById('container')
+);
+-->
+</textarea>
+
+<!--IMAGE APP WITH AJAX-->
+<textarea readonly="true" ng-show="reactjsContentE"><!--
+// In this example we also have two components - a picture and
+// a picture list. The pictures are fetched from Instagram via AJAX.
+
+
+var Picture = React.createClass({
+
+    // This component doesn't hold any state - it simply transforms
+    // whatever was passed as attributes into HTML that represents a picture.
+
+    clickHandler: function(){
+        
+        // When the component is clicked, trigger the onClick handler that 
+        // was passed as an attribute when it was constructed:
+
+        this.props.onClick(this.props.id);
+    },
+
+    render: function(){
+
+        var cls = 'picture ' + (this.props.favorite ? 'favorite' : '');
+
+        return (
+
+            <div className={cls} onClick={this.clickHandler}>
+                <img src={this.props.src} width="200" title={this.props.title} />
+            </div>
+
+        );
+
+    }
+
+});
+
+var PictureList = React.createClass({
+
+    getInitialState: function(){
+        
+        // The pictures array will be populated via AJAX, and 
+        // the favorites one when the user clicks on an image:
+        
+        return { pictures: [], favorites: [] };
+    },
+
+    componentDidMount: function(){
+        
+        // When the component loads, send a jQuery AJAX request
+
+        var self = this;
+
+        // API endpoint for Instagram's popular images for the day
+
+        var url = 'https://api.instagram.com/v1/media/popular?client_id=' + this.props.apiKey + '&callback=?';
+
+        $.getJSON(url, function(result){
+
+            if(!result || !result.data || !result.data.length){
+                return;
+            }
+
+            var pictures = result.data.map(function(p){
+
+                return { 
+                    id: p.id, 
+                    url: p.link, 
+                    src: p.images.low_resolution.url, 
+                    title: p.caption ? p.caption.text : '', 
+                    favorite: false 
+                };
+
+            });
+
+            // Update the component's state. This will trigger a render.
+            // Note that this only updates the pictures property, and does
+            // not remove the favorites array.
+
+            self.setState({ pictures: pictures });
+
+        });
+
+    },
+
+    pictureClick: function(id){
+
+        // id holds the ID of the picture that was clicked.
+        // Find it in the pictures array, and add it to the favorites
+
+        var favorites = this.state.favorites,
+            pictures = this.state.pictures;
+
+        for(var i = 0; i < pictures.length; i++){
+
+            // Find the id in the pictures array
+
+            if(pictures[i].id == id) {                  
+
+                if(pictures[i].favorite){
+                    return this.favoriteClick(id);
+                }
+
+                // Add the picture to the favorites array,
+                // and mark it as a favorite:
+
+                favorites.push(pictures[i]);
+                pictures[i].favorite = true;
+
+                break;
+            }
+
+        }
+
+        // Update the state and trigger a render
+        this.setState({pictures: pictures, favorites: favorites});
+
+    },
+
+    favoriteClick: function(id){
+
+        // Find the picture in the favorites array and remove it. After this, 
+        // find the picture in the pictures array and mark it as a non-favorite.
+
+        var favorites = this.state.favorites,
+            pictures = this.state.pictures;
+
+
+        for(var i = 0; i < favorites.length; i++){
+            if(favorites[i].id == id) break;
+        }
+
+        // Remove the picture from favorites array
+        favorites.splice(i, 1);
+
+
+        for(i = 0; i < pictures.length; i++){
+            if(pictures[i].id == id) {
+                pictures[i].favorite = false;
+                break;
+            }
+        }
+
+        // Update the state and trigger a render
+        this.setState({pictures: pictures, favorites: favorites});
+
+    },
+
+    render: function() {
+
+        var self = this;
+
+        var pictures = this.state.pictures.map(function(p){
+            return <Picture id={p.id} src={p.src} title={p.title} favorite={p.favorite} onClick={self.pictureClick} />
+        });
+
+        if(!pictures.length){
+            pictures = <p>Loading images..</p>;
+        }
+
+        var favorites = this.state.favorites.map(function(p){
+            return <Picture id={p.id} src={p.src} title={p.title} favorite={true} onClick={self.favoriteClick} />
+        });
+
+        if(!favorites.length){
+            favorites = <p>Click an image to mark it as a favorite.</p>;
+        }
+
+        return (
+
+            <div>
+                <h1>Popular Instagram pics</h1>
+                <div className="pictures"> {pictures} </div>
+                    
+                <h1>Your favorites</h1>
+                <div className="favorites"> {favorites} </div>
+            </div>
+
+        );
+    }
+});
+
+
+// Render the PictureList component, and add it to .container.
+// I am using an API key for a Instagram test ap. Please generate and 
+// use your own from here http://instagram.com/developer/
+
+ReactDOM.render(
+    <PictureList apiKey="642176ece1e7445e99244cec26f4de1f" />,
+    document.getElementById('container')
+);
+-->
+</textarea>
+
+<!--PROPS-->
+<textarea readonly="true" ng-show="reactjsContentF"><!--
+import React from 'react';
+
+class App extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         header: "Header from props...",
+         content: "Content from props..."
+      }
+   }
+   render() {
+      return (
+         <div>
+            <Header headerProp = {this.state.header}/>
+            <Content contentProp = {this.state.content}/>
+         </div>
+      );
+   }
+}
+class Header extends React.Component {
+   render() {
+      return (
+         <div>
+            <h1>{this.props.headerProp}</h1>
+         </div>
+      );
+   }
+}
+class Content extends React.Component {
+   render() {
+      return (
+         <div>
+            <h2>{this.props.contentProp}</h2>
+         </div>
+      );
+   }
+}
+export default App;
+-->
+</textarea>
+
+<!--MOUNTING-->
+<textarea readonly="true" ng-show="reactjsContentG"><!--
+  componentWillMount() {
+    this.props.dispatch(fetchUser());
+  }
+-->
+</textarea>
+
+<!--METHOD-->
+<textarea readonly="true" ng-show="reactjsContentH"><!--
+import React from "react";
+import { connect } from "react-redux";
+
+import { fetchUser } from "../actions/userActions";
+import { fetchTweets } from "../actions/tweetsActions";
+
+@connect(store => {
+  return {
+    user: store.user.user,
+    userFetched: store.user.fetched,
+    tweets: store.tweets.tweets
+  };
+})
+export default class Layout extends React.Component {
+  componentWillMount() {
+    this.props.dispatch(fetchUser());
+  }
+
+  fetchTweets() {
+    this.props.dispatch(fetchTweets());
+  }
+
+  render() {
+    const { user, tweets } = this.props;
+    if (!tweets.length) {
+      return <button onClick={this.fetchTweets.bind(this)}>load tweets</button>;
+    }
+    const mappedTweets = tweets.map(tweet => <li>{tweet.text}</li>);
+    return (
+      <div>
+        <h1>{user.name}</h1>
+        <ul>{mappedTweets}</ul>
+      </div>
+    );
+  }
+}
+-->
+</textarea>
+
+<!--ACTIONS-->
+<textarea readonly="true" ng-show="reactjsContentI"><!--
+//ROOT URL
+const ROOT_URL =
+  location.href.indexOf("localhost") > 0 ? "http://localhost:3000/api" : "/api";
+
+//GET PRODUCRS
+export function fetchProducts() {
+  return function(dispatch) {
+    dispatch({ type: FETCH_PRODUCTS });
+    axios
+      .get(`${ROOT_URL}/products`)
+      .then(response => {
+        dispatch({ type: FETCH_PRODUCTS_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: FETCH_PRODUCTS_FAILED, payload: err });
+      });
+  };
+}
+
+//GET PRODUCT BY ID
+export function fetchProduct(id) {
+  return function(dispatch) {
+    dispatch({ type: FETCH_PRODUCT });
+    axios
+      .get(`${ROOT_URL}/products/${id}`)
+      .then(response => {
+        dispatch({ type: FETCH_PRODUCT_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: FETCH_PRODUCT_FAILED, payload: err });
+      });
+  };
+}
+
+//POST PRODUCT
+export function createProduct(name) {
+  return function(dispatch) {
+    dispatch({ type: CREATE_PRODUCT });
+    axios
+      .post(
+        `${ROOT_URL}/products`,
+        {
+          name: name
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "x-auth-token": localStorage.getItem("token")
+          }
+        }
+      )
+      .then(response => {
+        dispatch({ type: CREATE_PRODUCT_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: CREATE_PRODUCT_FAILED, payload: err });
+      });
+  };
+}
+
+//UPDATE PRODUCT
+export function updateProduct(id, name) {
+  return function(dispatch) {
+    dispatch({ type: UPDATE_PRODUCT });
+    axios
+      .put(
+        `${ROOT_URL}/products/${id}`,
+        {
+          name: name
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "x-auth-token": localStorage.getItem("token")
+          }
+        }
+      )
+      .then(response => {
+        dispatch({ type: UPDATE_PRODUCT_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: UPDATE_PRODUCT_FAILED, payload: err });
+      });
+  };
+}
+
+//DELETE PRODUCT
+export function deleteProduct(id, name) {
+  return function(dispatch) {
+    dispatch({ type: DELETE_PRODUCT });
+    axios
+      .delete(`${ROOT_URL}/products/${id}`, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-auth-token": localStorage.getItem("token")
+        }
+      })
+      .then(response => {
+        dispatch({ type: DELETE_PRODUCT_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: DELETE_PRODUCT_FAILED, payload: err });
+      });
+  };
+}
+
+  -->
+</textarea>
+
+<!--REDUCERS-->
+<textarea readonly="true" ng-show="reactjsContentJ"><!--
+const initialState = {
+  productList: {
+    products: [],
+    status: null,
+    error: null,
+    loading: false
+  },
+  newProduct: {
+    product: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  activeProduct: {
+    product: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  updatedProduct: {
+    product: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  deletedProduct: {
+    product: null,
+    status: null,
+    error: null,
+    loading: false
+  }
+};
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    //GET PRODUCTS
+    case FETCH_PRODUCTS:
+      return {
+        ...state,
+        productList: {
+          products: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case FETCH_PRODUCTS_SUCCESS:
+      return {
+        ...state,
+        productList: {
+          products: action.payload,
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case FETCH_PRODUCTS_FAILED:
+      return {
+        ...state,
+        productList: {
+          products: null,
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case FETCH_PRODUCTS_RESET:
+      return {
+        ...state,
+        productList: {
+          products: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //GET PRODUCT BY ID
+    case FETCH_PRODUCT:
+      return {
+        ...state,
+        activeProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case FETCH_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        activeProduct: {
+          product: action.payload,
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case FETCH_PRODUCT_FAILED:
+      return {
+        ...state,
+        activeProduct: {
+          product: null,
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case FETCH_PRODUCT_RESET:
+      return {
+        ...state,
+        activeProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //POST PRODUCT
+    case CREATE_PRODUCT:
+      return {
+        ...state,
+        newProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case CREATE_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        newProduct: {
+          product: [...state.products, action.payload],
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case CREATE_PRODUCT_FAILED:
+      return {
+        ...state,
+        newProduct: {
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case CREATE_PRODUCT_RESET:
+      return {
+        ...state,
+        newProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //UPDATE PRODUCT
+    case UPDATE_PRODUCT:
+      return {
+        ...state,
+        updatedProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case UPDATE_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        updatedProduct: {
+          product: [...state.products, action.payload],
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case UPDATE_PRODUCT_FAILED:
+      return {
+        ...state,
+        updatedProduct: {
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case UPDATE_PRODUCT_RESET:
+      return {
+        ...state,
+        updatedProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //DELETE PRODUCT
+    case DELETE_PRODUCT:
+      return {
+        ...state,
+        deletedProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case DELETE_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        deletedProduct: {
+          product: [...state.products, action.payload],
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case DELETE_PRODUCT_FAILED:
+      return {
+        ...state,
+        deletedProduct: {
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case DELETE_PRODUCT_RESET:
+      return {
+        ...state,
+        deletedProduct: {
+          product: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    default:
+      return state;
+  }
+};
+  -->
+</textarea>
+
+<!--COMBINE REDUCERS-->
+<textarea readonly="true" ng-show="reactjsContentK"><!--
+import { combineReducers } from "redux";
+
+import user from "./reducers/userReducer";
+import products from "./reducers/productsReducer";
+import categories from "./reducers/categoriesReducer";
+
+export default combineReducers({
+  user,
+  products,
+  categories
+});
+-->
+</textarea>
+
+<!--AUTHENTICATION-->
+<textarea readonly="true" ng-show="reactjsContentL"><!--
+//ROOT URL
+const ROOT_URL =
+  location.href.indexOf("localhost") > 0 ? "http://localhost:3000/api" : "/api";
+
+//GET USER
+export function fetchUser() {
+  return function(dispatch) {
+    dispatch({ type: FETCH_USER });
+    axios
+      .get(`${ROOT_URL}/users/profile`, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-auth-token": localStorage.getItem("token")
+        }
+      })
+      .then(response => {
+        dispatch({ type: FETCH_USER_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: FETCH_USER_FAILED, payload: err });
+      });
+  };
+}
+
+//SINGUP USER
+export function signupUser(name, email, password) {
+  return function(dispatch) {
+    dispatch({ type: SIGNUP_USER });
+    axios
+      .post(`${ROOT_URL}/users`, {
+        name: name,
+        email: email,
+        password: password
+      })
+      .then(response => {
+        dispatch({ type: SIGNUP_USER_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: SIGNUP_USER_FAILED, payload: err });
+      });
+  };
+}
+
+//SIGNIN USER
+export function signinUser(email, password) {
+  return function(dispatch) {
+    dispatch({ type: SIGNIN_USER });
+    axios
+      .post(`${ROOT_URL}/products/${id}`, {
+        email: email,
+        password: password
+      })
+      .then(response => {
+        localStorage.setItem("token", response.data.token);
+        dispatch({ type: SIGNIN_USER_SUCCESS, payload: response.data });
+      })
+      .catch(err => {
+        dispatch({ type: SIGNIN_USER_FAILED, payload: err });
+      });
+  };
+}
+
+//LOGOUT USER
+export function deleteProduct(id, name) {
+  return function(dispatch) {
+    localStorage.removeItem("token");
+    dispatch({ type: LOGOUT_USER });
+  };
+}
+
+
+
+//INITIAL STATE
+const initialState = {
+  activeUser: {
+    user: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  newUser: {
+    user: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  updatedUser: {
+    user: null,
+    status: null,
+    error: null,
+    loading: false
+  },
+  deletedUser: {
+    user: null,
+    status: null,
+    error: null,
+    loading: false
+  }
+};
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    //FETCH USER
+    case FETCH_USER:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case FETCH_USER_SUCCESS:
+      return {
+        ...state,
+        activeUser: {
+          user: action.payload,
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case FETCH_USER_FAILED:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case FETCH_USER_RESET:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //SIGNUP USER
+    case SIGNUP_USER:
+      return {
+        ...state,
+        newUser: {
+          user: null,
+          status: "signup",
+          error: null,
+          loading: true
+        }
+      };
+
+    case SIGNUP_USER_SUCCESS:
+      return {
+        ...state,
+        newUser: {
+          user: action.payload,
+          status: "authenticated",
+          error: null,
+          loading: false
+        }
+      };
+
+    case SIGNUP_USER_FAILED:
+      return {
+        ...state,
+        newUser: {
+          user: null,
+          status: "signup",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case SIGNUP_USER_RESET:
+      return {
+        ...state,
+        newUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //SIGNIN USER
+    case SIGNIN_USER:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: "signin",
+          error: null,
+          loading: true
+        }
+      };
+
+    case SIGNIN_USER_SUCCESS:
+      return {
+        ...state,
+        activeUser: {
+          user: action.payload,
+          status: "authenticated",
+          error: null,
+          loading: false
+        }
+      };
+
+    case SIGNIN_USER_FAILED:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: "signin",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case SIGNIN_USER_RESET:
+      return {
+        ...state,
+        activeUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //UPDATE USER
+    case UPDATE_USER:
+      return {
+        ...state,
+        updatedUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case UPDATE_USER_SUCCESS:
+      return {
+        ...state,
+        updatedUser: {
+          user: action.payload,
+          status: "authenticated",
+          error: null,
+          loading: false
+        }
+      };
+
+    case UPDATE_USER_FAILED:
+      return {
+        ...state,
+        updatedUser: {
+          user: null,
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case UPDATE_USER_RESET:
+      return {
+        ...state,
+        updatedUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //DELETE USER
+    case DELETE_USER:
+      return {
+        ...state,
+        deletedUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: true
+        }
+      };
+
+    case DELETE_USER_SUCCESS:
+      return {
+        ...state,
+        deletedUser: {
+          user: action.payload,
+          status: "success",
+          error: null,
+          loading: false
+        }
+      };
+
+    case DELETE_USER_FAILED:
+      return {
+        ...state,
+        deletedUser: {
+          user: null,
+          status: "failed",
+          error: action.payload,
+          loading: false
+        }
+      };
+
+    case DELETE_USER_RESET:
+      return {
+        ...state,
+        deletedUser: {
+          user: null,
+          status: null,
+          error: null,
+          loading: false
+        }
+      };
+
+    //LOGOUT USER
+    case LOGOUT_USER:
+      return {
+        ...state,
+        user: null,
+        status: null,
+        error: null,
+        loading: false
+      };
+
+    default:
+      return state;
+  }
+};
+
+-->
+</textarea>
+<div id="cs_angularrxjs"></div>
+    </div>
+  </div>
+</div>
+<!-------------------------------------END REACTJS+REDUX------------------------------------->
+<!-------------------------------------END REACTJS+REDUX------------------------------------->
+<!-------------------------------------END REACTJS+REDUX------------------------------------->
+
+
+<div class="spacer"></div>
+
+<!-------------------------------------ANGULAR+RXJS------------------------------------->
+<!-------------------------------------ANGULAR+RXJS------------------------------------->
+<!-------------------------------------ANGULAR+RXJS------------------------------------->
+<div class="content" ng-controller="AngularCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="AngularTab('contentA')">API Service</li>
+        <li class="list-group-item" ng-click="AngularTab('contentB')">Interceptor</li>
+        <li class="list-group-item" ng-click="AngularTab('contentC')">Model</li>
+        <li class="list-group-item" ng-click="AngularTab('contentD')">Create</li>
+        <li class="list-group-item" ng-click="AngularTab('contentE')">Read</li>
+        <li class="list-group-item" ng-click="AngularTab('contentF')">Update</li>
+        <li class="list-group-item" ng-click="AngularTab('contentG')">Login</li>
+        <li class="list-group-item" ng-click="AngularTab('contentH')">Routing</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">Angular + Rxjs</div><br>
+<!--API SERVICE-->
+<textarea readonly="true" ng-show="angularContentA"><!--
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { User } from "../model/user.model";
+import { Observable } from "rxjs/index";
+import { ApiResponse } from "../model/api.response";
+
+@Injectable()
+export class ApiService {
+
+  constructor(private http: HttpClient) { }
+  baseUrl: string = 'http://localhost:8080/users/';
+
+  login(loginPayload): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>('http://localhost:8080/' + 'token/generate-token', loginPayload);
+  }
+
+  getUsers(): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl);
+  }
+
+  getUserById(id: number): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl + id);
+  }
+
+  createUser(user: User): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(this.baseUrl, user);
+  }
+
+  updateUser(user: User): Observable<ApiResponse> {
+    return this.http.put<ApiResponse>(this.baseUrl + user.id, user);
+  }
+
+  deleteUser(id: number): Observable<ApiResponse> {
+    return this.http.delete<ApiResponse>(this.baseUrl + id);
+  }
+}
+
+-->
+</textarea>
+
+<!--INTERCEPTOR-->
+<textarea readonly="true" ng-show="angularContentB"><!--
+import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
+import {Observable} from "rxjs/internal/Observable";
+import {Injectable} from "@angular/core";
+
+@Injectable()
+export class TokenInterceptor implements HttpInterceptor {
+
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    let token = window.localStorage.getItem('token');
+    if (token) {
+      request = request.clone({
+        setHeaders: {
+          Authorization: 'Bearer ' + token
+        }
+      });
+    }
+    return next.handle(request);
+  }
+}
+
+-->
+</textarea>
+
+<!--MODEL-->
+<textarea readonly="true" ng-show="angularContentC"><!--
+export class ApiResponse {
+  status: number;
+  message: number;
+  result: any;
+}
+
+
+export class User {
+  id: number;
+}
+
+-->
+</textarea>
+
+<!--CREATE-->
+<textarea readonly="true" ng-show="angularContentD"><!--
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add User</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
+
+
+
+
+import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
+import {ApiService} from "../core/api.service";
+
+@Component({
+  selector: 'app-add-user',
+  templateUrl: './add-user.component.html',
+  styleUrls: ['./add-user.component.css']
+})
+export class AddUserComponent implements OnInit {
+
+  constructor(private formBuilder: FormBuilder,private router: Router, private apiService: ApiService) { }
+
+  addForm: FormGroup;
+
+  ngOnInit() {
+    this.addForm = this.formBuilder.group({
+      id: [],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      age: ['', Validators.required],
+      salary: ['', Validators.required]
+    });
+
+  }
+
+  onSubmit() {
+    this.apiService.createUser(this.addForm.value)
+      .subscribe( data => {
+        this.router.navigate(['list-user']);
+      });
+  }
+
+}
+-->
+</textarea>
+
+<!--READ-->
+<textarea readonly="true" ng-show="angularContentE"><!--
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> User Details</h2>
+  <button class="btn btn-danger" style="width:100px" (click)="addUser()"> Add User</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>UserName</th>
+      <th>Age</th>
+      <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td class="hidden">{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.salary}}</td>
+      <td><button class="btn btn-success" (click)="deleteUser(user)"> Delete</button>
+        <button class="btn btn-success" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+import { Component, OnInit , Inject} from '@angular/core';
+import {Router} from "@angular/router";
+import {User} from "../model/user.model";
+import {ApiService} from "../core/api.service";
+
+@Component({
+  selector: 'app-list-user',
+  templateUrl: './list-user.component.html',
+  styleUrls: ['./list-user.component.css']
+})
+export class ListUserComponent implements OnInit {
+
+  users: User[];
+
+  constructor(private router: Router, private apiService: ApiService) { }
+
+  ngOnInit() {
+    if(!window.localStorage.getItem('token')) {
+      this.router.navigate(['login']);
+      return;
+    }
+    this.apiService.getUsers()
+      .subscribe( data => {
+          this.users = data.result;
+      });
+  }
+
+  deleteUser(user: User): void {
+    this.apiService.deleteUser(user.id)
+      .subscribe( data => {
+        this.users = this.users.filter(u => u !== user);
+      })
+  };
+
+  editUser(user: User): void {
+    window.localStorage.removeItem("editUserId");
+    window.localStorage.setItem("editUserId", user.id.toString());
+    this.router.navigate(['edit-user']);
+  };
+
+  addUser(): void {
+    this.router.navigate(['add-user']);
+  };
+}
+
+-->
+</textarea>
+
+<!--UPDATE-->
+<textarea readonly="true" ng-show="angularContentF"><!--
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Edit User</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="hidden">
+      <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+    </div>
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username" readonly="true">
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
+
+
+
+import { Component, OnInit , Inject} from '@angular/core';
+import {Router} from "@angular/router";
+import {User} from "../model/user.model";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {first} from "rxjs/operators";
+import {ApiService} from "../core/api.service";
+
+@Component({
+  selector: 'app-edit-user',
+  templateUrl: './edit-user.component.html',
+  styleUrls: ['./edit-user.component.css']
+})
+export class EditUserComponent implements OnInit {
+
+  user: User;
+  editForm: FormGroup;
+  constructor(private formBuilder: FormBuilder,private router: Router, private apiService: ApiService) { }
+
+  ngOnInit() {
+    let userId = window.localStorage.getItem("editUserId");
+    if(!userId) {
+      alert("Invalid action.")
+      this.router.navigate(['list-user']);
+      return;
+    }
+    this.editForm = this.formBuilder.group({
+      id: [''],
+      username: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      age: ['', Validators.required],
+      salary: ['', Validators.required]
+    });
+    this.apiService.getUserById(+userId)
+      .subscribe( data => {
+        this.editForm.setValue(data.result);
+      });
+  }
+
+  onSubmit() {
+    this.apiService.updateUser(this.editForm.value)
+      .pipe(first())
+      .subscribe(
+        data => {
+          if(data.status === 200) {
+            alert('User updated successfully.');
+            this.router.navigate(['list-user']);
+          }else {
+            alert(data.message);
+          }
+        },
+        error => {
+          alert(error);
+        });
+  }
+
+}
+-->
+</textarea>
+
+<!--LOGIN-->
+<textarea readonly="true" ng-show="angularContentG"><!--
+<div class="row">
+
+  <div class="col-md-6 login-container">
+    <h2 style="margin: auto">Login </h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">UserName:</label>
+        <input type="text" class="form-control" formControlName="username" id="username" autocomplete="off">
+        <div class="error" *ngIf="loginForm.controls['username'].hasError('required') && loginForm.controls['username'].touched">Username is required</div>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" formControlName="password" id="pwd" autocomplete="off">
+        <div class="error" *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">Password is required</div>
+      </div>
+      <button class="btn btn-success" [disabled]="loginForm.invalid">Login</button>
+      <div *ngIf="invalidLogin" class="error">
+        <div>Invalid credentials.</div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
+import {ApiService} from "../core/api.service";
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+
+  loginForm: FormGroup;
+  invalidLogin: boolean = false;
+  constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService) { }
+
+  onSubmit() {
+    if (this.loginForm.invalid) {
+      return;
+    }
+    const loginPayload = {
+      username: this.loginForm.controls.username.value,
+      password: this.loginForm.controls.password.value
+    }
+    this.apiService.login(loginPayload).subscribe(data => {
+      debugger;
+      if(data.status === 200) {
+        window.localStorage.setItem('token', data.result.token);
+        this.router.navigate(['list-user']);
+      }else {
+        this.invalidLogin = true;
+        alert(data.message);
+      }
+    });
+  }
+
+  ngOnInit() {
+    window.localStorage.removeItem('token');
+    this.loginForm = this.formBuilder.group({
+      username: ['', Validators.compose([Validators.required])],
+      password: ['', Validators.required]
+    });
+  }
+}
+
+-->
+</textarea>
+
+<div id="cs_nodejs"></div>
+<!--ROUTING-->
+<textarea readonly="true" ng-show="angularContentH"><!--
+import { RouterModule, Routes } from '@angular/router';
+import {LoginComponent} from "./login/login.component";
+import {AddUserComponent} from "./add-user/add-user.component";
+import {ListUserComponent} from "./list-user/list-user.component";
+import {EditUserComponent} from "./edit-user/edit-user.component";
+
+const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'add-user', component: AddUserComponent },
+  { path: 'list-user', component: ListUserComponent },
+  { path: 'edit-user', component: EditUserComponent },
+  {path : '', component : LoginComponent}
+];
+
+export const routing = RouterModule.forRoot(routes);
+-->
+</textarea>
+
+    </div>
+  </div>
+</div>
+<!-------------------------------------END ANGULAR+RXJS------------------------------------->
+<!-------------------------------------END ANGULAR+RXJS------------------------------------->
+<!-------------------------------------END ANGULAR+RXJS------------------------------------->
+
+
+<div class="spacer"></div>
+
+<!-------------------------------------NODEJS------------------------------------->
+<!-------------------------------------NODEJS------------------------------------->
+<!-------------------------------------NODEJS------------------------------------->
+<div class="content" ng-controller="NodejsCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" ng-click="NodejsTab('contentA')">Index</li>
+        <li class="list-group-item" ng-click="NodejsTab('contentB')">Startup</li>
+        <li class="list-group-item" ng-click="NodejsTab('contentC')">Routes</li>
+        <li class="list-group-item" ng-click="NodejsTab('contentD')">Models</li>
+        <li class="list-group-item" ng-click="NodejsTab('contentE')">Middleware</li>
+        <li class="list-group-item" ng-click="NodejsTab('contentF')">Config</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="article-head">NodeJS</div><br>
+<!--INDEX-->
+<textarea readonly="true" ng-show="nodejsContentA"><!--
+const winston = require("winston");
+const express = require("express");
+const app = express();
+
+require("./startup/logging");
+require("./startup/routes")(app);
+require("./startup/db")();
+require("./startup/config")();
+require("./startup/validation")();
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => winston.info(`Listening on port ${port}`));
+-->
+</textarea>
+
+<!--STARTUP-->
+<textarea readonly="true" ng-show="nodejsContentB"><!--
+//CONFIG
+const config = require("config");
+module.exports = function() {
+  if (!config.get("jwtPrivateKey")) {
+    throw new Error("FATAL ERROR: jwtPrivateKey is not defined.");
+  }
+};
+
+//DB
+const winston = require("winston");
+const mongoose = require("mongoose");
+module.exports = function() {
+  mongoose
+    .connect(
+      "mongodb://localhost/store",
+      { useNewUrlParser: true }
+    )
+    .then(() => winston.info("Connected to MongoDB..."));
+};
+
+
+//LOGGING
+const winston = require("winston");
+//require('winston-mongodb');
+require("express-async-errors");
+module.exports = function() {
+  winston.handleExceptions(
+    new winston.transports.File({ filename: "uncaughtExceptions.log" })
+  );
+  process.on("unhandledRejection", ex => {
+    throw ex;
+  });
+  winston.add(winston.transports.File, { filename: "logfile.log" });
+  //winston.add(winston.transports.MongoDB, {
+  //  db: 'mongodb://localhost/vidly',
+  //  level: 'info'
+  //});
+};
+
+
+//ROUTES
+const express = require("express");
+
+const users = require("../routes/users");
+const auth = require("../routes/auth");
+const products = require("../routes/products");
+const categories = require("../routes/categories");
+const error = require("../middleware/error");
+module.exports = function(app) {
+  app.use(express.json());
+  app.use("/api/users", users);
+  app.use("/api/auth", auth);
+  app.use("/api/products", products);
+  app.use("/api/categories", categories);
+  app.use(error);
+};
+
+
+//VALIDATION
+const Joi = require("joi");
+module.exports = function() {
+  Joi.objectId = require("joi-objectid")(Joi);
+};
+
+-->
+</textarea>
+
+<!--ROUTES-->
+<textarea readonly="true" ng-show="nodejsContentC"><!--
+//AUTH
+const { User } = require("../models/user");
+
+const Joi = require("joi");
+const bcrypt = require("bcrypt");
+const _ = require("lodash");
+
+const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+
+router.post("/", async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) return res.status(400).send("Invalid email or password");
+
+  const validPassword = await bcrypt.compare(req.body.password, user.password);
+  if (!validPassword) return res.status(400).send("Invalid email or password");
+
+  const token = user.generateAuthToken();
+  res.send(token);
+});
+
+function validate(req) {
+  const schema = {
+    email: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+      .email(),
+    password: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+  };
+
+  return Joi.validate(req, schema);
+}
+module.exports = router;
+
+
+//CATEGORIES
+const auth = require("../middleware/auth");
+const admin = require("../middleware/admin");
+const { Category, validate } = require("../models/category");
+
+const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+
+router.get("/", async (req, res) => {
+  const categories = await Category.find().sort("name");
+  res.send(categories);
+});
+
+router.get("/:id", async (req, res) => {
+  const category = await Category.findById(req.param.id);
+  if (!category) return res.send(404).send("Category not found.");
+  res.semd(category);
+});
+
+router.post("/", [auth, admin], async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  let category = new Category({
+    name: req.body.name
+  });
+  category = await category.save();
+
+  res.send(category);
+});
+
+router.put("/:id", [auth, admin], async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const category = await Category.findByIdAndUpdate(
+    req.params.id,
+    {
+      name: req.body.name
+    },
+    {
+      new: true
+    }
+  );
+  if (!category) return res.status(404).send("Category not found.");
+  res.send(category);
+});
+
+router.delete("/:id", [auth, admin], async (req, res) => {
+  const category = await Category.findByIdAndRemove(req.params.id);
+  if (!category) return res.status(404).send("Category not found.");
+  res.send(category);
+});
+module.exports = router;
+
+
+//PRODUCTS
+const { Product, validate } = require("../models/product");
+const { Category } = require("../models/category");
+const auth = require("../middleware/auth");
+
+const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+
+router.get("/", async (req, res) => {
+  const products = await Product.find().sort("name");
+  res.send(products);
+});
+
+router.get("/:id", async (req, res) => {
+  const product = await Product.findById(req.param.id);
+
+  if (!product) return res.status(404).send("Product not found");
+  res.send(product);
+});
+
+router.post("/", auth, async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const category = await Category.findById(req.body.categoryId);
+  if (!category) return res.status(400).send("Invalid Category");
+
+  const product = new Product({
+    name: req.body.name,
+    description: req.body.description,
+    price: req.body.price,
+    category: {
+      _id: category._id,
+      name: category.name
+    }
+  });
+
+  await product.save();
+  res.send(product);
+});
+
+router.put("/:id", auth, async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const category = await Category.findById(req.body.categoryId);
+  if (!category) return res.status(400).send("Invalid Category");
+
+  const product = await Product.findByIdAndUpdate(
+    req.params.id,
+    {
+      name: req.body.name,
+      description: req.body.description,
+      price: req.body.price,
+      category: {
+        _id: category._id,
+        name: category.name
+      }
+    },
+    { new: true }
+  );
+
+  if (!product) return res.status(404).send("Product not found.");
+  res.send(product);
+});
+
+router.delete("/:id", auth, async (req, res) => {
+  const product = await Product.findByIdAndRemove(req.params.id);
+
+  if (!product) return res.status(404).send("Product not Found");
+  res.send(product);
+});
+module.exports = router;
+
+
+//USER
+const auth = require("../middleware/auth");
+const { User, validate } = require("../models/user");
+
+const jwt = require("jsonwebtoken");
+const config = require("config");
+const bcrypt = require("bcrypt");
+const _ = require("lodash");
+
+const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+
+router.get("/profile", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-password");
+  res.send(user);
+});
+
+router.post("/", async (req, res) => {
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  let user = await User(_.pick(req.body, ["name", "email", "password"]));
+  const salt = await bcrypt.genSalt(10);
+  user.password = await bcrypt.hash(user.password, salt);
+  await user.save();
+
+  const token = user.generateAuthToken();
+  res
+    .header("x-auth-token", token)
+    .send(_.pick(user, ["_id", "name", "email"]));
+});
+module.exports = router;
+-->
+</textarea>
+
+<!--MODELS-->
+<textarea readonly="true" ng-show="nodejsContentD"><!--
+//USER
+const config = require("config");
+const jwt = require("jsonwebtoken");
+const Joi = require("joi");
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 50
+  },
+  email: {
+    type: String,
+    require: true,
+    minlength: 5,
+    maxlength: 255
+  },
+  password: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 1024
+  },
+  isAdmin: Boolean
+});
+
+userSchema.methods.generateAuthToken = function() {
+  const token = jwt.sign(
+    { _id: this._id, isAdmin: this.isAdmin },
+    config.get("jwtPrivateKey")
+  );
+  return token;
+};
+
+const User = mongoose.model("User", userSchema);
+
+function validateUser(user) {
+  const schema = {
+    name: Joi.string()
+      .min(5)
+      .max(50)
+      .required(),
+    email: Joi.string()
+      .min(5)
+      .max(255)
+      .required(),
+    password: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+  };
+  return Joi.validate(user, schema);
+}
+
+exports.User = User;
+exports.validate = validateUser;
+
+
+//CATEGORY
+const Joi = require("joi");
+const mongoose = require("mongoose");
+
+const categorySchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 50
+  }
+});
+
+const Category = mongoose.model("Category", categorySchema);
+
+function validateCategory(category) {
+  const schema = {
+    name: Joi.string()
+      .min(5)
+      .max(50)
+  };
+  return Joi.validate(category, schema);
+}
+
+exports.categorySchema = categorySchema;
+exports.Category = Category;
+exports.validate = validateCategory;
+
+
+//PRODUCT
+const Joi = require("joi");
+const mongoose = require("mongoose");
+const { categorySchema } = require("./category");
+
+const productSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    maxlength: 255
+  },
+  description: {
+    type: String,
+    required: true,
+    maxlength: 2048
+  },
+  price: {
+    type: String,
+    required: true,
+    maxlength: 10
+  },
+  category: {
+    type: categorySchema,
+    required: true
+  }
+});
+
+const Product = mongoose.model("Product", productSchema);
+
+function validateProduct(product) {
+  const schema = {
+    name: Joi.string()
+      .max(255)
+      .required(),
+    description: Joi.string()
+      .max(2048)
+      .required(),
+    price: Joi.string()
+      .max(10)
+      .required(),
+    categoryId: Joi.objectId().required()
+  };
+
+  return Joi.validate(product, schema);
+}
+
+exports.Product = Product;
+exports.validate = validateProduct;
+-->
+</textarea>
+
+<!--MIDDLEWARE-->
+<textarea readonly="true" ng-show="nodejsContentE"><!--
+//ADMIN
+module.exports = function(req, res, next) {
+  if (!req.user.isAdmin) return res.status(403).send("Access Denied");
+  next();
+};
+
+
+//ASYNC
+module.exports = function(handler) {
+  return async (req, res, next) => {
+    try {
+      await handler(req, res);
+    } catch (ex) {
+      next(ex);
+    }
+  };
+};
+
+
+//AUTH
+const jwt = require("jsonwebtoken");
+const config = require("config");
+
+module.exports = function(req, res, next) {
+  const token = req.header("x-auth-token");
+  if (!token) return res.status(401).send("Access denied. No token provided.");
+
+  try {
+    const decoded = jwt.verify(token, config.get("jwtPrivateKey"));
+    req.user = decoded;
+    next();
+  } catch (ex) {
+    res.status(400).send("Invalid token");
+  }
+};
+
+
+//ERROR
+const winston = require("winston");
+
+module.exports = function(err, req, res, next) {
+  res.status(500).send("Something failed");
+};
+
+-->
+</textarea>
+
+<!--CONFIG-->
+<textarea readonly="true" ng-show="nodejsContentF"><!--
+//custom-environment-variables.json
+{
+  "jwtPrivateKey": "store_jwtPrivateKey"
+}
+
+//default.json
+{
+  "jwtPrivateKey": "store_jwtPrivateKey"
+}
+-->
+</textarea>
+
+    </div>
+  </div>
+</div>
+<!-------------------------------------END NODEJS------------------------------------->
+<!-------------------------------------END NODEJS------------------------------------->
+<!-------------------------------------END NODEJS------------------------------------->
+<!--END CONTENT-->

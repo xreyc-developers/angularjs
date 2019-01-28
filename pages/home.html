@@ -1,0 +1,228 @@
+
+<div class="content">
+  <!--CONTENT START-->
+  <blockquote class="blockquote">
+    <p>
+      I have used many implementations on the frontend and backend technologies 
+      like Object Oriented Programming(OOP) and MVC architecture introduced by big 
+      giants in the industry. In this section, I am going to show you what I actually 
+      do when implementing web architecture in both frontend and backend development.
+    </p>
+  </blockquote>
+</div>
+
+<div id="home_vuejs"></div>
+<hr>
+<div class="content-sec-title">Frontend</div>
+<hr>
+
+
+<!--VUEJS-->
+<div class="content">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12 article-img-container"> 
+      <img src="images/sets/vuejs-achitecture.png" style="width:100%;" />
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-12 article-content-container">
+      <div class="article">
+        <div class="article-head">VueJS</div>
+        <p>
+            <div id="home_vuex"></div>
+            This is my favorite among the three frameworks/library for building SPA not just 
+            because of its simplicity but also because it is progressive and easy to maintain. 
+            Its syntax looks like AngularJS and ReactJS mixed which makes me love this framework.
+        </p>
+
+        <p>
+          I use <b>Vuex</b> for state management because it blends well with VueJS than Redux, maybe 
+          because it takes advantage by building it based on VueJS core.
+        </p>
+        <div class="article">
+          <div class="article-head">How Vuex works?</div>
+          <img src="images/sets/vuex-dataflow.png" style="width:100%;"/>
+          <p>
+            <div id="home_reactjs"></div>
+            <div id="home_redux"></div>
+            Based on my understanding and experience with Vue + Vuex, this is how the data 
+            flows inside of vuex library, where components only trigger an action and get 
+            data via getters. Actions don't care about the state, it only deals with the 
+            business logic where calculations, API and other operations are involved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+<hr>
+
+
+<!--REACTJS-->
+<div class="content">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12 article-img-container">
+      <img
+        src="images/sets/reactjs-achitecture.png"
+        style="width:100%;"
+      />
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-12 article-content-container">
+      <div class="article">
+        <div class="article-head">ReactJS</div>
+        <p>
+          ReactJS basically is an open-source JavaScript library which is used for building user 
+          interfaces specifically for single-page applications. It’s used for handling view layer 
+          for web and mobile apps. React also allows us to create reusable UI components.
+        </p>
+
+        <div class="article-head" >How Redux works?</div>
+        <img src="images/sets/redux-dataflow.png" style="width:100%;"/>
+        <p>
+          <div id="home_angular"></div>
+          Redux works just like Vuex, however, they have a different process of handling the state. 
+          State and actions are handled by the reducer, it takes a new set of data from the action 
+          and using state data as the initial data and finally updates the state that can be accessed 
+          everywhere in the application.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div id="home_rxjs"></div>
+<!--ANGULAR-->
+<div class="content">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12 article-img-container" style="max-height: 500px; overflow-y: scroll;">
+      <img
+        src="images/sets/angular-achitecture.png"
+        style="width: 100%;"
+      />
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-12 article-content-container">
+      <div class="article">
+        <div class="article-head">Angular</div>
+        <p>
+            I have less experience on this amongst the three frameworks here, I actually did some 
+            projects using it but not the version 2. I created an online quiz website using angularJS 
+            (Angular 1) which I blend it with vanilla PHP as the back end. Some people say it is 
+            easier to learn than ReactJS, so using this on a future project wouldn't be a problem. 
+            I've done some practice using Angular 7 where the terminal is always used in creating 
+            components, service, and some other stuff. The photo shows my current knowledge of 
+            implementing it, but I think I can perform better than what I’ve done on the sample.
+        </p>
+        <div class="article-head">AngularJS</div>
+        <p>
+          <div id="home_nodejs"></div>
+          I always use this library because it is easy to blend with the backend and easy to 
+          deploy on the web. I normally use this library when I am using a shared hosting where 
+          you have no root access to install some application.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="content-sec-title">Backend</div>
+<hr>
+
+<!--NODEJS-->
+<div class="content">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12 article-img-container">
+      <img
+        src="images/sets/nodejs-achitecture.png"
+        style="width:100%;"
+      />
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-12 article-content-container">
+      <div class="article">
+        <div class="article-head">NodeJS</div>
+        <p>
+          Based on my understanding, NodeJS is a <b>runtime environment</b> for running JavaScript. 
+          It enables running JavaScript code outside a browser by using the Google Chrome's V8 engine. 
+          Since it runs JavaScript as a backend application, it enables running queries in an 
+          asynchronous fashion means non-blocking.
+        </p>
+        <p>
+          This is my favorite among the three backend services here because you can implement codes 
+          in a less opinionated way. Based on the implementation I’ve shown in the picture, 
+          I refactor the files to make the application more maintainable.
+        </p>
+        <p>
+                <div id="home_laravel"></div>
+      <div id="home_django"></div>
+          I distributed the index.js code to the startup folder in order to beautify the structure of 
+          the application. Separating the models, routes and middleware is a good practice since model 
+          and middleware is reusable in every route by injecting it on a particular route. I use packages 
+          that are mainly used to standardized my application such as <b>Express, Mongoose, Json web token,
+          Config, Lodash, Fawn, Joi, Winston, Bcrypt, and many other packages.</b>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!--LARAVEL DJANGO-->
+<div class="content">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="article">
+        <div class="article-head">PHP Laravel</div>
+        <p>
+          I am more comfortable on this framework than Django since I used PHP on most of my
+          project for the past 4 years. What I like with this framework is that everything is
+          already handled like error handling and other stuff. I used this framework on the 
+          backend application only by passing some JSON data dependent on the URL endpoint I set.
+        </p>
+        <p>
+          Before I learned this framework I spent a lot of time building my backend application 
+          using PHP(OOP) which uses classes in order to build a secure website. I am using 
+          JWT(Json Web Token) package for user authentication because I want to blend it with 
+          other application and designate my work front the frontend side of the application.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="article">
+        <div class="article-head">Python Django</div>
+        <p>
+          Django is my newly learned framework and my ideal framework for the backend application 
+          (other than rails) because it is based on Python which has many capabilities like machine learning, 
+          data science, and many other applications. When I planned to learn Django Framework, I started to 
+          learn python, which confused me at first because to of its naming convention, like dictionaries 
+          which are called array in many languages.
+        </p>
+        <p>
+          When started learning in Django, my main objective was to learn how to create REST API using this 
+          framework because I'll be using VueJS on my frontend application. I learned many things about this 
+          framework like serializer, generic API view and other things that are new to my experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="content">
+  <blockquote class="blockquote">
+    <p>
+      Rather than playing games and any other stuff, programming is actually my hobby. I am flexible on 
+      creating web-based applications based on my current knowledge and is still learning other applications 
+      that are trendy this year. I am soon planning to learn other languages like Ruby on Rails, which is used 
+      by big companies that are successful today.
+    </p>
+    <p>
+      What I am going to learn next is Ruby on Rails and ASP.NET since these frameworks are good in terms of 
+      startup project based on my research. I normally can learn a framework just within two weeks or less 
+      since all I just have to learn is how to implement building a rocket on the other side of the land. 
+      After this, will be Android and IOS development, since it is a requirement for complete startup projects.
+    </p>
+  </blockquote>
+</div>
